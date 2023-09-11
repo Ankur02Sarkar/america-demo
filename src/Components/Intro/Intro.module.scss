@@ -30,12 +30,11 @@
             color: #1e0f84;
             font-weight: 600;
             text-decoration: none;
-            font-size: min(8vw, 3.5rem);
+            font-size: min(2vw, 3rem);
             font-weight: 600;
             letter-spacing: 2px;
             line-height: 1;
             font-family: 'Captain of America';
-            // filter: blur(1px);
         }
 
         .btn{
@@ -53,7 +52,7 @@
         transform: rotate(15deg);
         position: absolute;
         left:47%;
-        top: 10%;
+        top: 9%;
     }
     .container h1{
         font-size: 1.8rem;

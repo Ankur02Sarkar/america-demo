@@ -11,7 +11,7 @@ export default function Intro() {
       <h1 style={{fontFamily:'Captain of America'}}>Are You American ?</h1>
       <div className={styles.btnContainer}>
         <a href="#" onClick={() => setHide(true)} id="yes">Yes</a>
-        <a href="https://www.google.com" id="no" >No</a>
+        <a href="https://www.uscis.gov/citizenship/learn-about-citizenship/10-steps-to-naturalization" id="no" >No</a>
         </div>
         </div>
       </div>
