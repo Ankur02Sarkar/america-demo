@@ -43,7 +43,6 @@
     }
 
     .container{
- 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,8 +53,9 @@
         left:47%;
         top: 9%;
     }
-    .container h1{
-        font-size: 1.8rem;
+    .container h1 {
+        font-family: 'Captain of America';
+        font-size: 1.6rem;
         color: #e22c2c;
         font-family:url('/public/fonts/CaptainofAmerica-PersonalUse.ttf');
         font-weight: 600;
