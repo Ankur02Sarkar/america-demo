@@ -8,7 +8,7 @@ export default function Intro() {
   return (
     <div className={styles.introScreen} id={hide ? styles.hide : null}>
       <div className={styles.container}>
-      <h1>Are You American ?</h1>
+      <h1 style={{fontFamily:'Captain of America'}}>Are You American ?</h1>
       <div className={styles.btnContainer}>
         <a href="#" onClick={() => setHide(true)} id="yes">Yes</a>
         <a href="https://www.google.com" id="no" >No</a>

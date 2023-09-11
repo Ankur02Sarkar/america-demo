@@ -20,25 +20,21 @@
     .btnContainer {
         position: absolute;
         inset: auto 50% 10vh;
-        // top:500px;
-        // left: 47%;
         width: fit-content;
-
-        // transform: rotate(18deg);
         
         display: flex;
         gap: 4rem;
         
         a {
             white-space: nowrap;
-            // color: hsl(171, 48%, 35%);
+            color: #1e0f84;
             font-weight: 600;
             text-decoration: none;
             font-size: min(8vw, 3.5rem);
             font-weight: 600;
             letter-spacing: 2px;
             line-height: 1;
-            font-family: 'Technology';
+            font-family: 'Captain of America';
             // filter: blur(1px);
         }
 
