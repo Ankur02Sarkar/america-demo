@@ -1,0 +1,91 @@
+.socialWindow {
+    position: fixed;
+    inset: auto 5vw 5rem auto;
+
+    display: grid;
+
+    outline: 2px solid hsla(0, 0%, 0%, 0.5);
+    outline-offset: -4px;
+
+    border-style: outset;
+    border-width: 3px;
+    border-color: #FEFEFE #858585 #858585 #FEFEFE;
+    border-radius: 0.1rem;
+
+    width: min(22rem, 90vw);
+
+    .header {
+        padding: 0rem 1rem;
+        background: #02007f;
+        color: #FFF;
+
+        h2 {
+            padding-top: 0.25rem;
+            font-size: 1.15rem;
+        }
+    }
+
+    .iconContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+
+        flex-wrap: wrap;
+
+        background: #bfbfbf;
+
+        padding: 1.25rem 0rem;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            gap: 0.5rem;
+
+            font-size: 0.9rem;
+            color: #000;
+
+            span {
+                background: #FFF;
+                width: 2.6rem;
+                height: 2.6rem;
+
+                border-radius: 0.5rem;
+                padding: 0.75rem;
+
+                display: grid;
+                place-content: center;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        #telegram span {
+            background: linear-gradient(180deg, #49b4eb, #33a1d5);
+
+            svg {
+                color: #FFF;
+                font-size: 1.5rem;
+            }
+        }
+
+        #twitter span {
+            background: #000;
+
+            svg {
+                color: #FFF;
+                font-size: 1.5rem;
+            }
+        }
+
+        #uniswap span,
+        #dex span {
+            background: #eee;
+        }
+    }
+}

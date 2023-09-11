@@ -1,0 +1,91 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    // padding: 0.5rem 2rem;
+
+    background: #1e0f84;
+    // border-top: 2px solid #ffffff;
+    border: 2px solid #efefef;
+
+    backdrop-filter: blur(20px) saturate(1.8);
+
+    .line,.line1,.line2,.line3{
+
+        width: 100%;
+        height: 7px;
+        background-color: #d72323;
+        padding-bottom: 1px;
+        opacity: 0.7;
+    }
+
+
+    .navLinks {
+        position: absolute;
+        inset: 0 0;
+        bottom: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem 1.5rem;
+        flex-wrap: wrap;
+        a {
+            white-space: nowrap;
+
+            color:rgb(255, 255, 255);
+
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-decoration: none;
+
+            letter-spacing: 1px;
+        }
+    }
+
+    .socialLinks {
+        position: absolute;
+        inset: 0 0 0 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        span {
+            width: 2.6rem;
+            height: 2.6rem;
+
+            padding: 0.75rem;
+
+            display: grid;
+            place-content: center;
+
+            background-color: #ffffff;
+            border-radius: 0.25rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        #telegram span {
+            svg {
+                color: #020202;
+                font-size: 1.5rem;
+            }
+        }
+
+        #twitter span {
+            svg {
+                color: #000000;
+                font-size: 1.5rem;
+            }
+        }
+
+        #uniswap span {
+            padding: 0.5rem;
+        }
+    }
+}

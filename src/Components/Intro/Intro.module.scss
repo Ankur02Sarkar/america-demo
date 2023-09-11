@@ -1,0 +1,86 @@
+.introScreen {
+    position: fixed;
+    inset: 0 0;
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    
+    display: flex;
+    transition: all 1s linear;
+    clip-path: inset(0% 0% 0% 0%);
+
+    .btnContainer {
+        position: absolute;
+        inset: auto 50% 10vh;
+        // top:500px;
+        // left: 47%;
+        width: fit-content;
+
+        // transform: rotate(18deg);
+        
+        display: flex;
+        gap: 4rem;
+        
+        a {
+            white-space: nowrap;
+            // color: hsl(171, 48%, 35%);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: min(8vw, 3.5rem);
+            font-weight: 600;
+            letter-spacing: 2px;
+            line-height: 1;
+            font-family: 'Technology';
+            // filter: blur(1px);
+        }
+
+        .btn{
+            width: 50%;
+        }
+    }
+
+    .container{
+ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 23%;
+        height: 60%;
+        transform: rotate(15deg);
+        position: absolute;
+        left:47%;
+        top: 10%;
+    }
+    .container h1{
+        font-size: 1.8rem;
+        color: #e22c2c;
+        font-family:url('/public/fonts/CaptainofAmerica-PersonalUse.ttf');
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 1;
+    }
+
+    .container .btnContainer{
+        position: absolute;
+        left: 20%;
+        top: 80%;
+    }
+
+        
+    
+}
+    
+
+
+#hide {
+    clip-path: inset(100% 0% 0% 0%);
+    pointer-events: none;
+}
