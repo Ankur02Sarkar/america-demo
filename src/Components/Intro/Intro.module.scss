@@ -24,7 +24,56 @@
             transform: translateX(-50%);
 
             min-width: fit-content;
+            width: 100%;
             height: 100vh;
+
+            object-fit: contain;
+        }
+
+        .btnContainer {
+            position: absolute;
+            inset: 0 0;
+
+            width: 100%;
+            height: 100vh;
+
+            // background: hsla(0, 100%, 50%, 0.2);
+
+            span {
+                position: absolute;
+                inset: 50% 50%;
+
+                height: fit-content;
+                width: fit-content;
+
+                transform: translate(-0.75rem, 6rem) rotate(18deg);
+
+                display: flex;
+                align-items: center;
+                gap: 4rem;
+
+                // outline: 1px solid #000;
+
+                a {
+                    background: transparent;
+                    outline: none;
+                    border: none;
+
+                    font-size: 1.5rem;
+                    font-family: 'Captain of America';
+                    text-decoration: none;
+
+                    cursor: pointer;
+
+                    &:nth-of-type(1) {
+                        color: blue;
+                    }
+
+                    &:nth-of-type(2) {
+                        color: red;
+                    }
+                }
+            }
         }
     }
     

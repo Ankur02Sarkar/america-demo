@@ -11,28 +11,22 @@ export default function Intro() {
     <div className={styles.introScreen} id={hide ? styles.hide : null}>
       
       <div className={styles.container}>
-        <img src={smile ? "/intro-smile.png" : "/intro-text.png"} useMap="#image-map" />
+        <img src={smile ? "/intro-smile.png" : "/intro.png"} useMap="#image-map" />
 
-        <map name="image-map">
-          <area
-            id="yes"
-            alt="yes"
-            href="#yes"
-            coords="665,396,644,460,711,481,732,419"
-            shape="poly"
-            onMouseEnter={() => setSmile(true)}
-            onMouseLeave={() => setSmile(false)}
-            onClick={() => setHide(true)}
-          />
-          <area
-            id="no"
-            alt="no"
-            href="https://www.uscis.gov/citizenship/learn-about-citizenship/10-steps-to-naturalization"
-            target="_Blank"
-            coords="777,434,753,496,818,520,838,456"
-            shape="poly"
-          />
-        </map>
+        <div className={styles.btnContainer}>
+          <span>
+            <a 
+              href="#yes" 
+              id="yes"
+              onClick={() => setHide(true)}
+              onMouseEnter={() => setSmile(true)}
+              onMouseLeave={() => setSmile(false)}
+            >
+              Yes
+            </a>
+            <a href="https://www.uscis.gov/citizenship/learn-about-citizenship/10-steps-to-naturalization" target="_Blank">No</a>
+          </span>
+        </div>
       </div>
 
       <div className={styles.eagles}>
