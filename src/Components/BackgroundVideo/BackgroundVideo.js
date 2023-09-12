@@ -9,8 +9,8 @@ export default function BackgroundVideo() {
     function playVideo (e) {
         if(e.srcElement.id === 'yes'){
             video.current.play();
-            console.log(e)
         }
+        console.log(e);
     }
 
     useEffect(() => {
