@@ -17,4 +17,20 @@
         width: 100%;
         height: 118%;
     }
+
+    .muteBtn {
+        position: absolute;
+        inset: 15% 2.5vw;
+
+        width: 3rem;
+        height: 3rem;
+
+        background: transparent;
+        outline: none;
+        border: none;
+
+        cursor: pointer;
+
+        z-index: 10;
+    }
 }

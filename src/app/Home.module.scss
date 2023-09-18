@@ -1,118 +1,251 @@
-.home {
+.videoSection {
+  position: relative;
+
+  .muteBtn {
+    position: absolute;
+    inset: 15% 2.5vw;
+
+    width: 3rem;
+    height: 3rem;
+
+    background: transparent;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+  }
+
+  .topBar {
+    position: absolute;
+    inset: 0 0;
+
+    width: 100%;
+    height: 12.5%;
+
+    #gun {
+      position: absolute;
+      inset: 0 0;
+      height: 100%;
+    }
+
+    #hands {
+      position: absolute;
+      inset: auto 10% -35% auto;
+
+      width: 25%;
+    }
+
+    #trump {
+      position: absolute;
+      width: 10%;
+      inset: auto 17.5% -82% auto;
+
+      clip-path: inset(0% 0% 42% 0%);
+    }
+  }
+
+  .bottomBar {
+    position: absolute;
+    inset: auto 0% 0%;
+
+    width: 100%;
+    height: 12.5%;
+
+    background: #000000;
+
+    #soldier {
+      position: absolute;
+      inset: auto auto 0% 0%;
+      height: 90%;
+    }
+
+    #rockets {
+      position: absolute;
+      inset: 0% 50%;
+
+      transform: translateX(-50%);
+
+      height: 100%;
+    }
+
+    #laden {
+      position: absolute;
+      inset: -40% 0% auto auto;
+
+      height: 150%;
+    }
+  }
+
+  video {
+    width: 100%;
+  }
+}
+
+.memeSection {
+  background-image: url('/images/gif/meme-bg.gif');
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  isolation: isolate;
+  position: relative;
+
+  padding: 18vh 0rem 0rem;
+
+  .filter {
+    position: absolute;
+    inset: 0 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: hsla(0, 0%, 0%, 0.75);
+    z-index: -1;
+  }
+}
+
+.testinomialSection {
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: url('/images/gif/testinomials-bg.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding-inline: 10vw;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
 
-  gap: 2rem;
-}
+  padding: 15vh 5vw;
 
-.videoPlayer {
-  position: absolute;
-  inset: 0rem 50%;
-  transform: translateX(-50%);
+  isolation: isolate;
+  position: relative;
 
-  width: min(90vw, 50rem);
-  height: fit-content;
-  display: grid;
+  .filter {
+    position: absolute;
+    inset: 0 0;
 
-  outline: 2px solid hsla(0, 0%, 0%, 0.5);
-  outline-offset: -4px;
+    width: 100%;
+    height: 100%;
 
-  border-style: outset;
-  border-width: 3px;
-  border-color: #FEFEFE #858585 #858585 #FEFEFE;
-  border-radius: 0.1rem;
-
-  .header {
-    padding: 0rem 1rem;
-    background: #02007f;
-    color: #FFF;
-
-    h2 {
-      padding-top: 0.25rem;
-      font-size: 1.15rem;
-    }
+    background: hsla(0, 0%, 0%, 0.75);
+    z-index: -1;
   }
-}
 
-.btnPopup {
-  z-index: 10;
+  h1 {
+    position: absolute;
+    inset: 5vh 0;
 
-  width: fit-content;
-  display: grid;
+    width: 100%;
+    height: fit-content;
 
-  outline: 2px solid hsla(0, 0%, 0%, 0.5);
-  outline-offset: -4px;
-
-  border-style: outset;
-  border-width: 3px;
-  border-color: #FEFEFE #858585 #858585 #FEFEFE;
-  border-radius: 0.1rem;
-
-  .header {
-    padding: 0rem 1rem;
-    background: #02007f;
     color: #FFF;
+    font-size: min(2.5rem, 5vw);
+    font-weight: 400;
+    white-space: nowrap;
 
-    h2 {
-      padding-top: 0.25rem;
-      font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    img {
+      height: min(2.5rem, 5vw);
+      margin-inline: min(1rem, 2.5vw);
     }
   }
 
-  .content {
-    background: #c0c1c0;
+  .testinomialContainer {
+    width: 100%;
 
-    display: grid;
-    place-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
 
-    padding: 1rem;
+    .testinomial {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
 
-    button {
-      background: #bfc0bf;
+      img {
+        height: 15rem;
+        width: 12rem;
 
-      height: 2.25rem;
-
-      outline: 2px solid hsla(0, 0%, 0%, 0.25);
-      outline-offset: -3px;
-      border-width: 2px;
-      border-color: #FEFEFE #858585 #858585 #FEFEFE;
-
-      padding: 0.25rem 0.5rem;
-      letter-spacing: 2px;
-      font-size: 1.15rem;
-
-      cursor: pointer;
-
-      position: relative;
-
-      &::after {
-        content: '';
-        position: absolute;
-        inset: 7.5% 2.5%;
-
-        width: 95%;
-        height: 85%;
-
-        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%2300000059' stroke-width='3' stroke-dasharray='1%2c 5' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-
-        opacity: 0;
+        object-fit: contain;
+        object-position: center;
       }
 
-      &:active {
-        background: hsl(0, 0%, 88%);
+      button {
+        background: transparent;
+        border: none;
+        outline: none;
 
-        border-style: inset;
-        border-color: #858585 #FEFEFE #FEFEFE #858585;
+        cursor: pointer;
 
-        position: relative;
-
-        &::after {
-            opacity: 1;
+        svg {
+          font-size: 3rem;
+          color: #FFF;
         }
+      }
     }
+  }
+}
+
+.explosions {
+  background: #000;
+
+  padding: 2rem;
+}
+
+.gallerySection {
+  width: 100%;
+  padding: 2rem 2.5vw;
+
+  display: grid;
+  gap: 0rem;
+}
+
+.logoStrip {
+  width: 100%;
+  padding: 2rem 0rem;
+  
+  .logoContainer {
+    overflow: hidden;
+    
+    .sliderContainer {
+      display: flex;
+      gap: 1rem;
+      min-width: fit-content;
+      
+      .slider {
+        display: flex;
+        gap: 1rem;
+        min-width: fit-content;
+        animation: marquee 20s linear infinite;
+  
+        img {
+          width: 5rem;
+          height: 5rem;
+  
+          object-fit: contain;
+        }
+      }
     }
+    
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
