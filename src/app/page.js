@@ -9,21 +9,27 @@ export default function Home() {
   const video = useRef(null);
   const [isMuted, setIsMuted] = useState(false);
   const audios = ['/mp3/Trump.mp3', '/mp3/Obama_BG.mp3', '/mp3/The_Emperorr.mp3', '/mp3/Joe_with_BG.mp3']
-  const [trumpPlay] = useSound(audios[0], {
-    volume: 0.5,
+  const [trumpPlay,{stop:trumpStop}] = useSound(audios[0], {
+    volume: 1,
   });
 
-   const [obamaPlay] = useSound(audios[1], {
-    volume: 0.5,
+   const [obamaPlay,{stop:obamaStop}] = useSound(audios[1], {
+    volume: 1,
   });
-  const [emperorPlay] = useSound(audios[2], {
-    volume: 0.5,
-  });
-
-  const [joePlay] = useSound(audios[3], {
-    volume: 0.5,
+  const [emperorPlay,{stop:emperorStop}] = useSound(audios[2], {
+    volume: 1,
   });
 
+  const [joePlay,{stop:joeStop}] = useSound(audios[3], {
+    volume: 1,
+  });
+
+  function stopPlay() {
+    trumpStop();
+    obamaStop();
+    emperorStop();
+    joeStop();
+  }
 
   function playVideo(e) {
     if (e.srcElement.id === 'yes') {
@@ -71,19 +77,19 @@ export default function Home() {
         <div className={styles.testinomialContainer}>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/trump-face.png" alt="trump" />
-            <button onClick={trumpPlay}><MdOutlinePlayCircle /></button>
+            <button onClick={()=>{stopPlay();trumpPlay()}}><MdOutlinePlayCircle /></button>
           </div>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/obama-face.png" alt="obama" />
-            <button onClick={obamaPlay}><MdOutlinePlayCircle /></button>
+            <button onClick={()=>{stopPlay();obamaPlay()}}><MdOutlinePlayCircle /></button>
           </div>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/borat-face.png" alt="borat" />
-            <button onClick={emperorPlay}><MdOutlinePlayCircle /></button>
+            <button onClick={()=>{stopPlay();emperorPlay()}}><MdOutlinePlayCircle /></button>
           </div>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/joe-face.png" alt="joe" />
-            <button onClick={joePlay}><MdOutlinePlayCircle /></button>
+            <button onClick={()=>{stopPlay();joePlay()}}><MdOutlinePlayCircle /></button>
           </div>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/wizard-face.png" alt="wizard" />
