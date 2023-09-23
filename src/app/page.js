@@ -30,7 +30,7 @@ export default function Home() {
     <main className={styles.home}>
       <section className={styles.videoSection}>
         <div className={styles.topBar}>
-          <img src="/images/gif/machineGun.gif" alt="machine gun" id={styles.gun} />
+          {/* <img src="/images/gif/machineGun.gif" alt="machine gun" id={styles.gun} /> */}
           <img src="/images/hands.png" alt="trump hands" id={styles.hands} />
           <img src="/images/gif/trumpeyeroll.gif" alt="trump" id={styles.trump} />
         </div>
@@ -49,7 +49,6 @@ export default function Home() {
         <img src="/images/meme.svg" />
         <div className={styles.filter}></div>
       </section>
-
       <section className={styles.testinomialSection}>
         <div className={styles.filter}></div>
 
@@ -90,6 +89,7 @@ export default function Home() {
         <img src="/images/gif/gallery-4.gif" />
       </section>
 
+      <h1 style={{color:'white',fontSize:'2rem', textAlign:'center'}}>Sponsored By</h1>
       <div className={styles.logoStrip}>
         <div className={styles.logoContainer}>
           <div className={styles.sliderContainer}>
