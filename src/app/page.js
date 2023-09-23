@@ -1,15 +1,29 @@
 "use client";
 
 import { useEffect, useRef, useState } from 'react';
-
 import styles from './Home.module.scss';
-
+import useSound from 'use-sound';
 import { MdOutlinePlayCircle } from 'react-icons/md';
 
 export default function Home() {
   const video = useRef(null);
-
   const [isMuted, setIsMuted] = useState(false);
+  const audios = ['/mp3/Trump.mp3', '/mp3/Obama_BG.mp3', '/mp3/The_Emperorr.mp3', '/mp3/Joe_with_BG.mp3']
+  const [trumpPlay] = useSound(audios[0], {
+    volume: 0.5,
+  });
+
+   const [obamaPlay] = useSound(audios[1], {
+    volume: 0.5,
+  });
+  const [emperorPlay] = useSound(audios[2], {
+    volume: 0.5,
+  });
+
+  const [joePlay] = useSound(audios[3], {
+    volume: 0.5,
+  });
+
 
   function playVideo(e) {
     if (e.srcElement.id === 'yes') {
@@ -57,23 +71,23 @@ export default function Home() {
         <div className={styles.testinomialContainer}>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/trump-face.png" alt="trump" />
-            <button><MdOutlinePlayCircle /></button>
+            <button onClick={trumpPlay}><MdOutlinePlayCircle /></button>
           </div>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/obama-face.png" alt="obama" />
-            <button><MdOutlinePlayCircle /></button>
+            <button onClick={obamaPlay}><MdOutlinePlayCircle /></button>
           </div>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/borat-face.png" alt="borat" />
-            <button><MdOutlinePlayCircle /></button>
+            <button onClick={emperorPlay}><MdOutlinePlayCircle /></button>
           </div>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/joe-face.png" alt="joe" />
-            <button><MdOutlinePlayCircle /></button>
+            <button onClick={joePlay}><MdOutlinePlayCircle /></button>
           </div>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/wizard-face.png" alt="wizard" />
-            <button><MdOutlinePlayCircle /></button>
+            <button ><MdOutlinePlayCircle /></button>
           </div>
         </div>
       </section>
