@@ -110,16 +110,22 @@ export default function Home() {
             {[...Array(4).keys()].map((i) => (
               <div className={styles.slider} key={i}>
                 <img src="/images/logos/image-0.png" alt="logo" />
+                <img src="/images/logos/lockheedmartin-logo.png" alt="logo" />
                 <img src="/images/logos/image-1.png" alt="logo" />
+                <img src="/images/logos/walmart-logo.png" alt="logo" />
                 <img src="/images/logos/image-2.png" alt="logo" />
                 <img src="/images/logos/image-4.png" alt="logo" />
+                {/* <img src="/images/logos/apple-logo.png" alt="logo" /> */}
                 <img src="/images/logos/image-5.png" alt="logo" />
                 <img src="/images/logos/image-6.png" alt="logo" />
+                <img src="/images/logos/tesla-logo.png" alt="logo" />
                 <img src="/images/logos/image-7.png" alt="logo" />
                 <img src="/images/logos/image-8.png" alt="logo" />
+                <img src="/images/logos/boeing-logo.png" alt="logo" />
                 <img src="/images/logos/image-9.png" alt="logo" />
                 <img src="/images/logos/image-10.png" alt="logo" />
                 <img src="/images/logos/image-11.png" alt="logo" />
+                <img src="/images/logos/rtx-logo.png" alt="logo" />
                 <img src="/images/logos/image-12.png" alt="logo" />
                 <img src="/images/logos/image-13.png" alt="logo" />
                 <img src="/images/logos/image-14.png" alt="logo" />
