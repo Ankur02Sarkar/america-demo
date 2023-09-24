@@ -6,6 +6,10 @@
 
     background: #bf0a30;
 
+    position: absolute;
+    inset: 0 0;
+    z-index: 10;
+
     img {
         max-height: 100%;
         width: auto;

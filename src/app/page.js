@@ -3,32 +3,60 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.scss';
 import useSound from 'use-sound';
-import { MdOutlinePlayCircle } from 'react-icons/md';
+import { MdOutlinePlayCircle, MdPauseCircleOutline } from 'react-icons/md';
 
 export default function Home() {
   const video = useRef(null);
+  const audios = ['/mp3/Trump.mp3', '/mp3/Obama_BG.mp3', '/mp3/The_Emperorr.mp3', '/mp3/Joe_with_BG.mp3'];
+
   const [isMuted, setIsMuted] = useState(false);
-  const audios = ['/mp3/Trump.mp3', '/mp3/Obama_BG.mp3', '/mp3/The_Emperorr.mp3', '/mp3/Joe_with_BG.mp3']
-  const [trumpPlay,{stop:trumpStop}] = useSound(audios[0], {
+  const [tempMuted, setTempMuted] = useState(false);
+  const [testinomial, setTestinomial] = useState(false);
+
+  const [trumpPlay, { pause: trumpPause }] = useSound(audios[0], {
     volume: 1,
+    onend: () => pauseTestinomial()
   });
 
-   const [obamaPlay,{stop:obamaStop}] = useSound(audios[1], {
+  const [obamaPlay, { pause: obamaPause }] = useSound(audios[1], {
     volume: 1,
-  });
-  const [emperorPlay,{stop:emperorStop}] = useSound(audios[2], {
-    volume: 1,
+    onend: () => pauseTestinomial()
   });
 
-  const [joePlay,{stop:joeStop}] = useSound(audios[3], {
+  const [emperorPlay, { pause: emperorPause }] = useSound(audios[2], {
     volume: 1,
+    onend: () => pauseTestinomial()
   });
 
-  function stopPlay() {
-    trumpStop();
-    obamaStop();
-    emperorStop();
-    joeStop();
+  const [joePlay, { pause: joePause }] = useSound(audios[3], {
+    volume: 1,
+    onend: () => pauseTestinomial()
+  });
+
+  function playTestinomial(id) {
+    if (testinomial) pauseTestinomial();
+
+    setTempMuted(true);
+    setTestinomial(id);
+
+    switch (id) {
+      case 'trump': trumpPlay(); break;
+      case 'obama': obamaPlay(); break;
+      case 'emperor': emperorPlay(); break;
+      case 'joe': joePlay(); break;
+    }
+  }
+
+  function pauseTestinomial() {
+    switch (testinomial) {
+      case 'trump': trumpPause(); break;
+      case 'obama': obamaPause(); break;
+      case 'emperor': emperorPause(); break;
+      case 'joe': joePause(); break;
+    }
+
+    setTempMuted(false);
+    setTestinomial(false);
   }
 
   function playVideo(e) {
@@ -54,13 +82,15 @@ export default function Home() {
           <img src="/images/hands.png" alt="trump hands" id={styles.hands} />
           <img src="/images/gif/trumpeyeroll.gif" alt="trump" id={styles.trump} />
         </div>
-        <video src={'/america.mp4'} loop={true} ref={video} muted={isMuted}/>
+        <video src={'/america.mp4'} loop={true} ref={video} muted={isMuted || tempMuted} />
         <button className={styles.muteBtn} onClick={() => setIsMuted(!isMuted)}>
           <img src={isMuted ? "/icons/unmute.svg" : "/icons/mute.svg"} />
         </button>
         <div className={styles.bottomBar}>
           <img src="/images/soldier.png" alt="soldier" id={styles.soldier} />
-          <img src="/images/rockets.png" alt="rockets" id={styles.rockets} />
+          <div className={styles.rocketContainer}>
+            <img src="/images/rocket.png" alt="rocket" id={styles.rocket} />
+          </div>
           <img src="/images/gif/laden.gif" alt="laden" id={styles.laden} />
         </div>
       </section>
@@ -69,31 +99,40 @@ export default function Home() {
         <img src="/images/meme.svg" />
         <div className={styles.filter}></div>
       </section>
+
       <section className={styles.testinomialSection}>
         <div className={styles.filter}></div>
 
-        <h1>IOO <img src="/icons/percentage.svg" alt="percentage" /> Real Testinomials</h1>
+        <h1>IOO <img src="/icons/percentage.svg" alt="percentage" /> Real Testimonial</h1>
 
         <div className={styles.testinomialContainer}>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/trump-face.png" alt="trump" />
-            <button onClick={()=>{stopPlay();trumpPlay()}}><MdOutlinePlayCircle /></button>
+            <button onClick={() => { testinomial === 'trump' ? pauseTestinomial() : playTestinomial('trump') }}>
+              {testinomial === 'trump' ? <MdPauseCircleOutline /> : <MdOutlinePlayCircle />}
+            </button>
           </div>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/obama-face.png" alt="obama" />
-            <button onClick={()=>{stopPlay();obamaPlay()}}><MdOutlinePlayCircle /></button>
+            <button onClick={() => { testinomial === 'obama' ? pauseTestinomial() : playTestinomial('obama') }}>
+              {testinomial === 'obama' ? <MdPauseCircleOutline /> : <MdOutlinePlayCircle />}
+            </button>
           </div>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/borat-face.png" alt="borat" />
-            <button onClick={()=>{stopPlay();emperorPlay()}}><MdOutlinePlayCircle /></button>
+            <button><MdOutlinePlayCircle /></button>
           </div>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/joe-face.png" alt="joe" />
-            <button onClick={()=>{stopPlay();joePlay()}}><MdOutlinePlayCircle /></button>
+            <button onClick={() => { testinomial === 'joe' ? pauseTestinomial() : playTestinomial('joe') }}>
+              {testinomial === 'joe' ? <MdPauseCircleOutline /> : <MdOutlinePlayCircle />}
+            </button>
           </div>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/wizard-face.png" alt="wizard" />
-            <button ><MdOutlinePlayCircle /></button>
+            <button onClick={() => { testinomial === 'emperor' ? pauseTestinomial() : playTestinomial('emperor') }}>
+              {testinomial === 'emperor' ? <MdPauseCircleOutline /> : <MdOutlinePlayCircle />}
+            </button>
           </div>
         </div>
       </section>
@@ -109,11 +148,11 @@ export default function Home() {
         <img src="/images/gif/gallery-4.gif" />
       </section>
 
-      <h1 style={{color:'white',fontSize:'2rem', textAlign:'center'}}>Sponsored By</h1>
+      <h1 style={{ color: 'white', fontSize: '2rem', textAlign: 'center', fontWeight: '400' }}>Sponsored By</h1>
       <div className={styles.logoStrip}>
         <div className={styles.logoContainer}>
           <div className={styles.sliderContainer}>
-            {[...Array(4).keys()].map((i) => (
+            {[...Array(3).keys()].map((i) => (
               <div className={styles.slider} key={i}>
                 <img src="/images/logos/image-0.png" alt="logo" />
                 <img src="/images/logos/lockheedmartin-logo.png" alt="logo" />

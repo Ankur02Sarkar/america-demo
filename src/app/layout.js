@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <head>
         <title>A M E R I C A</title>
       </head>
-      <body className={font.className}>
+      <body>
         <Header />
         {children}
         <Intro />
