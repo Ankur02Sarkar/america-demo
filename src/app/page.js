@@ -91,6 +91,7 @@ export default function Home() {
           <div className={styles.rocketContainer}>
             <img src="/images/rocket.png" alt="rocket" id={styles.rocket} />
           </div>
+          <img src="/images/gif/explosion.gif" alt="explosion" id={styles.explosion} />
           <img src="/images/gif/laden.gif" alt="laden" id={styles.laden} />
         </div>
       </section>
@@ -98,6 +99,7 @@ export default function Home() {
       <section className={styles.memeSection}>
         <img src="/images/meme.svg" />
         <div className={styles.filter}></div>
+        <img src="/images/plane.png" alt="plane" id={styles.jet} />
       </section>
 
       <section className={styles.testinomialSection}>

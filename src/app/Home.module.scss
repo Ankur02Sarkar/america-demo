@@ -59,6 +59,8 @@
 
     background: #000000;
 
+    isolation: isolate;
+
     .rocketContainer {
       height: 100%;
       width: 100%;
@@ -102,6 +104,30 @@
       height: 90%;
     }
 
+    #explosion {
+      position: absolute;
+      inset: auto 2.5% 0% auto;
+
+      height: 100%;
+      z-index: -1;
+
+      animation: explosion 2.75s ease-in-out infinite;
+    }
+
+    @keyframes explosion {
+      0% {
+        opacity: 0;
+      }
+      84% {
+        opacity: 0;
+      }
+      85% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 
     #laden {
       position: absolute;
@@ -124,6 +150,7 @@
 
   isolation: isolate;
   position: relative;
+  overflow: hidden;
 
   padding: 18vh 0rem 0rem;
 
@@ -136,6 +163,22 @@
 
     background: hsla(0, 0%, 0%, 0.75);
     z-index: -1;
+  }
+
+  #jet {
+    position: absolute;
+    inset: 0 0;
+
+    animation: jet 2s ease-in infinite;
+  }
+
+  @keyframes jet {
+    0% {
+      transform: translate(-100%, -100%);
+    }
+    100% {
+      transform: translate(100vw, 75vh);
+    }
   }
 }
 
