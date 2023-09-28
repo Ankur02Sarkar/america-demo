@@ -80,7 +80,7 @@ export default function Home() {
         <div className={styles.topBar}>
           {/* <img src="/images/gif/machineGun.gif" alt="machine gun" id={styles.gun} /> */}
           <img src="/images/hands.png" alt="trump hands" id={styles.hands} />
-          <img src="/images/gif/trumpeyeroll.gif" alt="trump" id={styles.trump} />
+          <img src="/images/trump.png" alt="trump" id={styles.trump} />
         </div>
         <video src={'/america.mp4'} loop={true} ref={video} muted={isMuted || tempMuted} />
         <button className={styles.muteBtn} onClick={() => setIsMuted(!isMuted)}>
