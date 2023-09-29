@@ -1,13 +1,24 @@
+"use client";
+
+import { useState } from 'react';
 import styles from './Cursor.module.scss';
 
 import useCursor from '@/src/Hooks/useCursor';
 
-export default function Cursor () {
+export default function Cursor() {
     const cursor = useCursor();
 
-    return (
-        <div className={styles.cursor}>
+    var cursorStyle = {
+        transform: `translate(calc(${cursor.x}px - 2.5rem), calc(${cursor.y}px - 0rem)) rotate(-45deg)`
+    };
 
+
+    return (
+        <div className={styles.cursorContainer}>
+            <div className={styles.cursor} style={cursorStyle}>
+                <img src="/gun.png" alt="gun" />
+                <img src="/muzzle.png" alt="muzzle" className={styles.muzzle} id={cursor.down ? styles.flash : null} />
+            </div>
         </div>
     )
 }

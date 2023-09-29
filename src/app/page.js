@@ -80,7 +80,7 @@ export default function Home() {
         <div className={styles.topBar}>
           {/* <img src="/images/gif/machineGun.gif" alt="machine gun" id={styles.gun} /> */}
           <img src="/images/hands.png" alt="trump hands" id={styles.hands} />
-          <img src="/images/trump.png" alt="trump" id={styles.trump} />
+          <img src="/images/gif/trumpeyeroll.gif" alt="trump" id={styles.trump} />
         </div>
         <video src={'/america.mp4'} loop={true} ref={video} muted={isMuted || tempMuted} />
         <button className={styles.muteBtn} onClick={() => setIsMuted(!isMuted)}>
@@ -144,10 +144,22 @@ export default function Home() {
       </div>
 
       <section className={styles.gallerySection}>
-        <img src="/images/gif/gallery-1.gif" />
-        <img src="/images/gif/gallery-2.gif" />
-        <img src="/images/gif/gallery-3.gif" />
-        <img src="/images/gif/gallery-4.gif" />
+        <div>
+          <img src="/images/gallery/meme-1.png" alt="gallery" />
+          <img src="/images/gallery/meme-1.gif" alt="gallery" />
+        </div>
+        <div>
+          <img src="/images/gallery/meme-2.png" alt="gallery" />
+          <img src="/images/gallery/meme-2.gif" alt="gallery" />
+        </div>
+        <div style={{marginBottom: '2rem'}}>
+          {/* <img src="/images/gallery/meme-3.png" alt="gallery" /> */}
+          <img src="/images/gallery/meme-3.gif" alt="gallery" />
+        </div>
+        <div>
+          <img src="/images/gallery/meme-4.png" alt="gallery" />
+          <img src="/images/gallery/meme-4.gif" alt="gallery" />
+        </div>
       </section>
 
       <h1 style={{ color: 'white', fontSize: '2rem', textAlign: 'center', fontWeight: '400' }}>Sponsored By</h1>
