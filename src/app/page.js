@@ -7,7 +7,7 @@ import { MdOutlinePlayCircle, MdPauseCircleOutline } from 'react-icons/md';
 
 export default function Home() {
   const video = useRef(null);
-  const audios = ['/mp3/Trump.mp3', '/mp3/Obama_BG.mp3', '/mp3/The_Emperorr.mp3', '/mp3/Joe_with_BG.mp3'];
+  const audios = ['/mp3/Trump.mp3', '/mp3/Obama_BG.mp3', '/mp3/Borat.mp3', '/mp3/The_Emperorr.mp3', '/mp3/Joe_with_BG.mp3'];
 
   const [isMuted, setIsMuted] = useState(false);
   const [tempMuted, setTempMuted] = useState(false);
@@ -22,13 +22,18 @@ export default function Home() {
     volume: 1,
     onend: () => pauseTestinomial()
   });
-
-  const [emperorPlay, { pause: emperorPause }] = useSound(audios[2], {
+  
+  const [boratPlay, { pause: boratPause }] = useSound(audios[2], {
     volume: 1,
     onend: () => pauseTestinomial()
   });
 
-  const [joePlay, { pause: joePause }] = useSound(audios[3], {
+  const [emperorPlay, { pause: emperorPause }] = useSound(audios[3], {
+    volume: 1,
+    onend: () => pauseTestinomial()
+  });
+
+  const [joePlay, { pause: joePause }] = useSound(audios[4], {
     volume: 1,
     onend: () => pauseTestinomial()
   });
@@ -42,6 +47,7 @@ export default function Home() {
     switch (id) {
       case 'trump': trumpPlay(); break;
       case 'obama': obamaPlay(); break;
+      case 'borat': boratPlay(); break;
       case 'emperor': emperorPlay(); break;
       case 'joe': joePlay(); break;
     }
@@ -51,6 +57,7 @@ export default function Home() {
     switch (testinomial) {
       case 'trump': trumpPause(); break;
       case 'obama': obamaPause(); break;
+      case 'borat': boratPause(); break;
       case 'emperor': emperorPause(); break;
       case 'joe': joePause(); break;
     }
@@ -122,7 +129,9 @@ export default function Home() {
           </div>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/borat-face.png" alt="borat" />
-            <button><MdOutlinePlayCircle /></button>
+            <button onClick={() => { testinomial === 'borat' ? pauseTestinomial() : playTestinomial('borat') }}>
+              {testinomial === 'borat' ? <MdPauseCircleOutline /> : <MdOutlinePlayCircle />}
+            </button>
           </div>
           <div className={styles.testinomial}>
             <img src="/images/testinomials/joe-face.png" alt="joe" />
