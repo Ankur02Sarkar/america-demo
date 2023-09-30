@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <title>A M E R I C A</title>
+        <link rel="preload" href="/gun.png" as="image" />
         <link rel="preload" href="/intro.png" as="image" />
         <link rel="preload" href="/intro-smile.png" as="image" />
       </head>

@@ -9,7 +9,7 @@ export default function Cursor() {
     const cursor = useCursor();
 
     var cursorStyle = {
-        transform: `translate(calc(${cursor.x}px - 2.5rem), calc(${cursor.y}px - 0rem)) rotate(-45deg)`
+        transform: `translate(calc(${cursor.x}px - 8rem), calc(${cursor.y}px + 0.75rem)) rotate(-45deg)`
     };
 
 

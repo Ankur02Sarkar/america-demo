@@ -111,21 +111,21 @@
       height: 100%;
       z-index: -1;
 
-      animation: explosion 2.75s ease-in-out infinite;
+      animation: explosion 2.5s linear infinite;
     }
 
     @keyframes explosion {
       0% {
-        opacity: 0;
+        display: none;
       }
       84% {
-        opacity: 0;
+        display: none;
       }
-      85% {
-        opacity: 1;
+      90% {
+        display: unset;
       }
       100% {
-        opacity: 1;
+        display: unset;
       }
     }
 
@@ -293,6 +293,11 @@
 
   > div {
     position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
 
     img:nth-of-type(2) {
       position: absolute;

@@ -17,14 +17,15 @@
     position: absolute;
     inset: 0 0;
 
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 6rem;
 
     .muzzle {
         position: absolute;
         inset: 0 0;
 
-        transform: translate(4rem, -1rem);
+        width: 50%;
+        transform: translate(9rem, 0.75rem);
 
         opacity: 0;
     }

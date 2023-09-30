@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.scss';
 import useSound from 'use-sound';
 import { MdOutlinePlayCircle, MdPauseCircleOutline } from 'react-icons/md';
+import Image from 'next/image';
 
 export default function Home() {
   const video = useRef(null);
@@ -161,13 +162,17 @@ export default function Home() {
           <img src="/images/gallery/meme-2.png" alt="gallery" />
           <img src="/images/gallery/meme-2.gif" alt="gallery" />
         </div>
-        <div style={{marginBottom: '2rem'}}>
-          {/* <img src="/images/gallery/meme-3.png" alt="gallery" /> */}
+        <div>
+          <img src="/images/gallery/meme-3.png" alt="gallery" />
           <img src="/images/gallery/meme-3.gif" alt="gallery" />
         </div>
         <div>
           <img src="/images/gallery/meme-4.png" alt="gallery" />
           <img src="/images/gallery/meme-4.gif" alt="gallery" />
+        </div>
+        <div>
+          <img src="/images/gallery/meme-5.png" alt="gallery" />
+          <img src="/images/gallery/meme-5.gif" alt="gallery" />
         </div>
       </section>
 
