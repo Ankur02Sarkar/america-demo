@@ -152,7 +152,46 @@
   position: relative;
   overflow: hidden;
 
-  padding: 18vh 0rem 0rem;
+  padding: 5rem 0rem 0rem;
+
+  .messageBox {
+    position: absolute;
+    inset: 22% 12% auto auto;
+
+    width: 20vw;
+
+    p {
+      position: absolute;
+      inset: calc(0% + 1.5vw) calc(50% + 1.5vw);
+      transform: translate(-50%, 0%);
+
+      width: 100%;
+
+      color: #FFF;
+      font-weight: 400;
+      font-size: min(1vw, 1rem);
+
+      a {
+        text-decoration: none;
+        animation: link 3s ease-in-out infinite;
+      }
+
+      @keyframes link {
+        0% {
+          color: #BF0A30;
+        }
+        33% {
+          color: #FFF;
+        }
+        66% {
+          color: #003fa5;
+        }
+        100% {
+          color: #BF0A30;
+        }
+      }
+    }
+  }
 
   .filter {
     position: absolute;

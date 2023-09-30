@@ -105,8 +105,12 @@ export default function Home() {
       </section>
 
       <section className={styles.memeSection}>
-        <img src="/images/meme.svg" />
         <div className={styles.filter}></div>
+        <img src="/images/meme.svg" />
+        <div className={styles.messageBox}>
+          <img src="/images/box.svg" alt="box" />
+          <p><a href="#">CLICK HERE</a> FOR THE FAT STIMMY</p>
+        </div>
         <img src="/images/plane.png" alt="plane" id={styles.jet} />
       </section>
 
