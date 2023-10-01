@@ -46,7 +46,11 @@ body {
   width: 100%;
   min-height: 100vh;
 
-  padding: 8rem 16vw;
+  padding: 8rem 16vw 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   z-index: 10;
 
@@ -54,7 +58,6 @@ body {
     background: hsla(217, 100%, 7%, 0.75);
     padding: 2rem 2rem;
     min-height: 100%;
-    margin-top: 1.5rem;
 
     h1 {
       text-align: center;
