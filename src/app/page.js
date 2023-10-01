@@ -23,7 +23,7 @@ export default function Home() {
     volume: 1,
     onend: () => pauseTestinomial()
   });
-  
+
   const [boratPlay, { pause: boratPause }] = useSound(audios[2], {
     volume: 1,
     onend: () => pauseTestinomial()
@@ -121,9 +121,9 @@ export default function Home() {
 
         <div className={styles.testinomialContainer}>
           <div className={styles.testinomial}>
-            <img src="/images/testinomials/trump-face.png" alt="trump" />
-            <button onClick={() => { testinomial === 'trump' ? pauseTestinomial() : playTestinomial('trump') }}>
-              {testinomial === 'trump' ? <MdPauseCircleOutline /> : <MdOutlinePlayCircle />}
+            <img src="/images/testinomials/wizard-face.png" alt="wizard" />
+            <button onClick={() => { testinomial === 'emperor' ? pauseTestinomial() : playTestinomial('emperor') }}>
+              {testinomial === 'emperor' ? <MdPauseCircleOutline /> : <MdOutlinePlayCircle />}
             </button>
           </div>
           <div className={styles.testinomial}>
@@ -145,9 +145,9 @@ export default function Home() {
             </button>
           </div>
           <div className={styles.testinomial}>
-            <img src="/images/testinomials/wizard-face.png" alt="wizard" />
-            <button onClick={() => { testinomial === 'emperor' ? pauseTestinomial() : playTestinomial('emperor') }}>
-              {testinomial === 'emperor' ? <MdPauseCircleOutline /> : <MdOutlinePlayCircle />}
+            <img src="/images/testinomials/trump-face.png" alt="trump" />
+            <button onClick={() => { testinomial === 'trump' ? pauseTestinomial() : playTestinomial('trump') }}>
+              {testinomial === 'trump' ? <MdPauseCircleOutline /> : <MdOutlinePlayCircle />}
             </button>
           </div>
         </div>
