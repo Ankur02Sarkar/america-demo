@@ -1,0 +1,45 @@
+.cursorContainer {
+    position: fixed;
+    inset: 0 0;
+
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+
+    z-index: 100;
+    
+    pointer-events: none;
+    user-select: none;
+}
+
+.cursor {
+    position: absolute;
+    inset: 0 0;
+
+    width: 10rem;
+    height: 6rem;
+
+    .muzzle {
+        position: absolute;
+        inset: 0 0;
+
+        width: 50%;
+        transform: translate(9rem, 0.75rem);
+
+        opacity: 0;
+    }
+    
+    #flash {
+        animation: muzzle-flash 0.1s ease infinite;
+    }
+
+    @keyframes muzzle-flash {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}

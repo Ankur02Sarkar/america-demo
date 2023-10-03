@@ -1,118 +1,393 @@
-.home {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline: 10vw;
-  flex-wrap: wrap;
+.videoSection {
+  position: relative;
+  inset: 0 0;
+  margin-top: 2.5%;
 
-  gap: 2rem;
-}
+  .muteBtn {
+    position: absolute;
+    inset: 15% 2.5vw;
 
-.videoPlayer {
-  position: absolute;
-  inset: 0rem 50%;
-  transform: translateX(-50%);
+    width: 3rem;
+    height: 3rem;
 
-  width: min(90vw, 50rem);
-  height: fit-content;
-  display: grid;
+    background: transparent;
+    outline: none;
+    border: none;
 
-  outline: 2px solid hsla(0, 0%, 0%, 0.5);
-  outline-offset: -4px;
-
-  border-style: outset;
-  border-width: 3px;
-  border-color: #FEFEFE #858585 #858585 #FEFEFE;
-  border-radius: 0.1rem;
-
-  .header {
-    padding: 0rem 1rem;
-    background: #02007f;
-    color: #FFF;
-
-    h2 {
-      padding-top: 0.25rem;
-      font-size: 1.15rem;
-    }
+    cursor: pointer;
   }
-}
 
-.btnPopup {
-  z-index: 10;
+  .topBar {
+    position: absolute;
+    inset: 0 0;
 
-  width: fit-content;
-  display: grid;
+    width: 100%;
+    height: 12.5%;
 
-  outline: 2px solid hsla(0, 0%, 0%, 0.5);
-  outline-offset: -4px;
+    z-index: 10;
 
-  border-style: outset;
-  border-width: 3px;
-  border-color: #FEFEFE #858585 #858585 #FEFEFE;
-  border-radius: 0.1rem;
+    pointer-events: none;
 
-  .header {
-    padding: 0rem 1rem;
-    background: #02007f;
-    color: #FFF;
+    // #gun {
+    //   position: absolute;
+    //   inset: 0 0;
+    //   height: 100%;
+    // }
 
-    h2 {
-      padding-top: 0.25rem;
-      font-size: 1.15rem;
+    #hands {
+      position: absolute;
+      inset: auto 10% -35% auto;
+
+      width: 25%;
+    }
+
+    #trump {
+      position: absolute;
+      width: 10%;
+      inset: auto 17.5% -82% auto;
+
+      clip-path: inset(0% 0% 42% 0%);
     }
   }
 
-  .content {
-    background: #c0c1c0;
+  .bottomBar {
+    position: absolute;
+    inset: auto 0% 0%;
 
-    display: grid;
-    place-content: center;
+    width: 100%;
+    height: 12.5%;
 
-    padding: 1rem;
+    background: #000000;
 
-    button {
-      background: #bfc0bf;
+    isolation: isolate;
 
-      height: 2.25rem;
-
-      outline: 2px solid hsla(0, 0%, 0%, 0.25);
-      outline-offset: -3px;
-      border-width: 2px;
-      border-color: #FEFEFE #858585 #858585 #FEFEFE;
-
-      padding: 0.25rem 0.5rem;
-      letter-spacing: 2px;
-      font-size: 1.15rem;
-
-      cursor: pointer;
-
-      position: relative;
-
-      &::after {
-        content: '';
+    .rocketContainer {
+      height: 100%;
+      width: 100%;
+      
+      #rocket {
         position: absolute;
-        inset: 7.5% 2.5%;
+        inset: 0% 0%;
+  
+        will-change: object-position;
+        
+        width: 100%;
+        height: 100%;
 
-        width: 95%;
-        height: 85%;
+        object-fit: contain;
+        object-position: left;
 
-        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%2300000059' stroke-width='3' stroke-dasharray='1%2c 5' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-
-        opacity: 0;
+        animation: rocket 2.5s linear infinite;
       }
 
-      &:active {
-        background: hsl(0, 0%, 88%);
-
-        border-style: inset;
-        border-color: #858585 #FEFEFE #FEFEFE #858585;
-
-        position: relative;
-
-        &::after {
-            opacity: 1;
+      @keyframes rocket {
+        0% {
+          opacity: 0;
+          object-position: left;
         }
+        5% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          object-position: right;
+        }
+      }
     }
+
+    #soldier {
+      position: absolute;
+      inset: auto auto 0% 0%;
+      height: 90%;
     }
+
+    #explosion {
+      position: absolute;
+      inset: auto 2.5% 0% auto;
+
+      height: 100%;
+      z-index: -1;
+
+      animation: explosion 2.5s linear infinite;
+    }
+
+    @keyframes explosion {
+      0% {
+        display: none;
+      }
+      84% {
+        display: none;
+      }
+      90% {
+        display: unset;
+      }
+      100% {
+        display: unset;
+      }
+    }
+
+    #laden {
+      position: absolute;
+      inset: -40% 0% auto auto;
+
+      height: 150%;
+    }
+  }
+
+  video {
+    width: 100%;
+  }
+}
+
+.memeSection {
+  background-image: url('/images/gif/meme-bg.gif');
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+
+  padding: 18vh 0rem 0rem;
+
+  .messageBox {
+    position: absolute;
+    inset: 22% 12% auto auto;
+
+    width: 20vw;
+
+    p {
+      position: absolute;
+      inset: calc(0% + 1.5vw) calc(50% + 1.5vw);
+      transform: translate(-50%, 0%);
+
+      width: 100%;
+
+      color: #FFF;
+      font-weight: 400;
+      font-size: min(1vw, 1rem);
+
+      a {
+        text-decoration: none;
+        animation: link 3s ease-in-out infinite;
+      }
+
+      @keyframes link {
+        0% {
+          color: #BF0A30;
+        }
+        33% {
+          color: #FFF;
+        }
+        66% {
+          color: #003fa5;
+        }
+        100% {
+          color: #BF0A30;
+        }
+      }
+    }
+  }
+
+  .filter {
+    position: absolute;
+    inset: 0 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: hsla(0, 0%, 0%, 0.75);
+    z-index: -1;
+  }
+
+  #jet {
+    position: absolute;
+    inset: 0 0;
+
+    animation: jet 2s ease-in infinite;
+  }
+
+  @keyframes jet {
+    0% {
+      transform: translate(-100%, -100%);
+    }
+    100% {
+      transform: translate(100vw, 75vh);
+    }
+  }
+}
+
+.testinomialSection {
+  width: 100%;
+  min-height: 70vh;
+
+  background-image: url('/images/gif/testinomials-bg.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+
+  padding: 15vh 5vw;
+
+  isolation: isolate;
+  position: relative;
+
+  .filter {
+    position: absolute;
+    inset: 0 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: hsla(0, 0%, 0%, 0.75);
+    z-index: -1;
+  }
+
+  h1 {
+    position: absolute;
+    inset: 2.5vh 0;
+
+    width: 100%;
+    height: fit-content;
+
+    color: #FFF;
+    font-size: min(5rem, 3vw);
+    font-weight: 400;
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    img {
+      height: min(2.5rem, 5vw);
+      margin-inline: min(1rem, 2.5vw);
+    }
+  }
+
+  .testinomialContainer {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .testinomial {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      img {
+        height: 14rem;
+        width: 9rem;
+
+        object-fit: contain;
+        object-position: center;
+      }
+
+      button {
+        background: transparent;
+        border: none;
+        outline: none;
+
+        cursor: pointer;
+
+        svg {
+          font-size: 2.6rem;
+          color: #FFF;
+        }
+
+      }
+
+      }
+    }
+  }
+
+
+.explosions {
+  background: #000;
+
+  padding: 2rem;
+}
+
+.gallerySection {
+  width: 100%;
+  padding: 2rem 2.5vw;
+
+  display: grid;
+  gap: 0rem;
+
+  > div {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      transition: all .5s;
+    }
+
+    img:nth-of-type(2) {
+      position: absolute;
+      inset: 0 0;
+
+      width: 100%;
+      height: 100%;
+
+      z-index: -1;
+    }
+  }
+}
+
+.logoStrip {
+  width: 100%;
+  padding: 2rem 0rem;
+  
+  .logoContainer {
+    overflow: hidden;
+    
+    .sliderContainer {
+      display: flex;
+      gap: 1rem;
+      min-width: fit-content;
+      // width: 100%;
+      
+      .slider {
+        display: flex;
+        gap: 1rem;
+        min-width: fit-content;
+        // width: 100%;
+        animation: marquee 20s linear infinite;
+  
+        img {
+          width: 5rem;
+          height: 5rem;
+  
+          object-fit: contain;
+        }
+      }
+    }
+    
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }

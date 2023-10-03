@@ -7,14 +7,31 @@
     height: 100vh;
 
     overflow: hidden;
-
-    z-index: -1;
-
+    pointer-events: none;
     video {
         position: absolute;
         inset: -4% 0;
-
+        
         width: 100%;
         height: 118%;
+
+        z-index: -1;
+    }
+
+    .muteBtn {
+        position: absolute;
+        inset: 15% 2.5vw;
+
+        width: 3rem;
+        height: 3rem;
+
+        background: transparent;
+        outline: none;
+        border: none;
+
+        cursor: pointer;
+
+        z-index: 100;
+        pointer-events: all;
     }
 }
