@@ -114,6 +114,17 @@
         }
     }
 
-
-
+    @media only screen and (max-width: 900px) {
+        img {
+            width: 25%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .navContainer {
+            justify-content: center;
+            .navLinks {
+                display: none;
+            }
+        }
+    }
 }
