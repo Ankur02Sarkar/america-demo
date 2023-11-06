@@ -319,7 +319,6 @@
 .testinomialSection2 {
     width: 100%;
     min-height: 70vh;
-    color: #fff;
   
     background-image: url('/images/gif/meme-bg.gif');
     background-size: cover;
@@ -335,11 +334,16 @@
     isolation: isolate;
     position: relative;
 
+    color: #fff;
     h1{
     font-size: 2rem;
     }
     h2{
       font-size: 1.5rem;
+    }
+    @font-face {
+      font-family: 'American Pride';
+      src: url(/fonts/AmericanPride.woff);
     }
   
     .filter {

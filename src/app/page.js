@@ -257,28 +257,28 @@ export default function Home() {
           <h1>Tokenomics</h1>
           <div>
             <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              <h2>
+              {/* <h2> */}
                 <div className="flex flex-row text-center">
                   O %
                 </div>
                 Buy Tax
-              </h2>
+              {/* </h2> */}
             </div>
             <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              <h2>
+              {/* <h2> */}
                 <div className="flex flex-row text-center">
                   O %
                 </div>
                 Sell Tax
-              </h2>
+              {/* </h2> */}
             </div>
             <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              <h2>
+              {/* <h2> */}
                 <div className="flex flex-row text-center">
                   Supply
                 </div>
-                100,000,000,000,00 (90% Added to uniswap)
-              </h2>
+                IOO,OOO,OOO,OOO,OO (9O% Added to uniswap)
+              {/* </h2> */}
             </div>
           </div>
         </div>
@@ -286,67 +286,107 @@ export default function Home() {
           <h1>How To Buy</h1>
           <div>
             <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              <h2>
+              {/* <h2 style={{fontSize:"1em"}}> */}
                 <div className="flex flex-row text-center">
                   Step 1
                 </div>
-                Buy Tax
-              </h2>
+                Download Metamask or wallet of your choice from the app store or Google Play store for free. Desktop users, download the Google Chrome extension by going to metamask.io.
+              {/* </h2> */}
             </div>
             <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              <h2>
+              {/* <h2 style={{fontSize:"1em"}}> */}
                 <div className="flex flex-row text-center">
                   Step 2
                 </div>
-                Sell Tax
-              </h2>
+                Have ETH in your wallet to switch to $USD. If you don’t have any ETH, you can buy directly on Metamask, transfer from another wallet, or buy on another exchange and send it to your wallet.
+              {/* </h2> */}
             </div>
             <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              <h2>
+              {/* <h2 style={{fontSize:"1em"}}> */}
                 <div className="flex flex-row text-center">
                   Step 3
                 </div>
-                100,000,000,000,00 (90% Added to uniswap)
-              </h2>
+                Switch ETH for $USD. We have 0% taxes so you don’t need to worry about buying with a specific slippage, although you may need to use slippage during times of market volatility.
+              {/* </h2> */}
             </div>
             <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              <h2>
+              {/* <h2 style={{fontSize:"1em"}}> */}
                 <div className="flex flex-row text-center">
                   Step 4
                 </div>
-                100,000,000,000,00 (90% Added to uniswap)
-              </h2>
+                Prepare for $USD
+                Contract Address :
+OXOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+              {/* </h2> */}
             </div>
           </div>
         </div>
         <div style={{maxWidth:"25%"}}>
           <h1>Roadmap</h1>
           <div>
+            Phase 1
             <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              <h2>
-                <div className="flex flex-row text-center">
-                  Phase 1
-                </div>
-                Buy Tax
-              </h2>
-            </div>
-            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              <h2>
-                <div className="flex flex-row text-center">
-                  Phase 2
-                </div>
-                Sell Tax
-              </h2>
-            </div>
-            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              <h2>
-                <div className="flex flex-row text-center">
-                  Phase 3
-                </div>
-                100,000,000,000,00 (90% Added to uniswap)
-              </h2>
+              - $USD Token Launches
+              <br/>
+              - $USD Website Launches
+              <br/>
+              - $USD Reaches 1,000 Degen Hodlers
+              <br/>
+              - $USD Lists on CG and CMC
+              <br/>
+              - $USD on your Social Feed
+              <br/>
+              - #Buy $USD Starts Trending on Twitter
             </div>
           </div>
+          {/* <div>
+            Phase 2
+            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
+              - $USD Token Launches
+              <br/>
+              - $USD Website Launches
+              <br/>
+              - $USD Reaches 1,000 Degen Hodlers
+              <br/>
+              - $USD Lists on CG and CMC
+              <br/>
+              - $USD on your Social Feed
+              <br/>
+              - #Buy $USD Starts Trending on Twitter
+            </div>
+          </div>
+          <div>
+            Phase 3
+            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
+              - $USD Token Launches
+              <br/>
+              - $USD Website Launches
+              <br/>
+              - $USD Reaches 1,000 Degen Hodlers
+              <br/>
+              - $USD Lists on CG and CMC
+              <br/>
+              - $USD on your Social Feed
+              <br/>
+              - #Buy $USD Starts Trending on Twitter
+            </div>
+          </div>
+          <div>
+            Phase 4
+            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
+              - $USD Token Launches
+              <br/>
+              - $USD Website Launches
+              <br/>
+              - $USD Reaches 1,000 Degen Hodlers
+              <br/>
+              - $USD Lists on CG and CMC
+              <br/>
+              - $USD on your Social Feed
+              <br/>
+              - #Buy $USD Starts Trending on Twitter
+            </div>
+          </div> */}
         </div>
       </section>
 
