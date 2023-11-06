@@ -402,9 +402,8 @@
   gap: 3rem;
 
   .content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
     gap: 1.75rem;
 
     width: 90vw;

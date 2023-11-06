@@ -276,12 +276,28 @@ export default function Home() {
                 <h1>Phase 2</h1>
                 <img src="/images/gif/explosion.gif" alt="explosion" />
               </div>
+              <div className={styles.box}>
+                <p>- $USD Token Launches</p>
+                <p>- $USD Website Launches</p>
+                <p>- $USD Reaches 1,000 Degen Hodlers</p>
+                <p>- $USD Lists on CG and CMC</p>
+                <p>- $USD on your Social Feed</p>
+                <p>- #Buy$USD Starts Trending on Twitter</p>
+              </div>
             </div>
 
             <div className={styles.phase}>
               <div className={styles.title}>
                 <h1>Phase 3</h1>
                 <img src="/images/gif/explosion.gif" alt="explosion" />
+              </div>
+              <div className={styles.box}>
+                <p>- $USD Token Launches</p>
+                <p>- $USD Website Launches</p>
+                <p>- $USD Reaches 1,000 Degen Hodlers</p>
+                <p>- $USD Lists on CG and CMC</p>
+                <p>- $USD on your Social Feed</p>
+                <p>- #Buy$USD Starts Trending on Twitter</p>
               </div>
             </div>
           </div>
