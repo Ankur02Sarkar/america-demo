@@ -157,6 +157,23 @@ export default function Home() {
         <img src="/images/gif/explosions.gif" alt="divider" />
       </div>
 
+      <section className={styles.testinomialSection2}>
+        <div className={styles.filter}></div>
+        <div>
+          <h1>Tokenomics</h1>
+          <div className={styles.dataContainer}>
+
+          </div>
+        </div>
+        <div>
+          <h1>How to Buy</h1>
+        </div>
+        <div>
+          <h1>Roadmap</h1>
+        </div>
+
+      </section>
+
       <section className={styles.gallerySection}>
         <div>
           <img src="/images/gallery/meme-1.png" alt="gallery" />
