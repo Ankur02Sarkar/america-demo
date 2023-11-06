@@ -253,7 +253,7 @@ export default function Home() {
 
       <section className={styles.testinomialSection2}>
         <div className={styles.filter}></div>
-        <div className={styles.flexContainer} style={{maxWidth:"25%",overflow:"hidden", margin:"0 auto"}}>
+        <div className={styles.flexContainer} style={{maxWidth:"90%",overflow:"hidden", margin:"0 auto"}}>
           <h1>Tokenomics</h1>
           <div>
             <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
@@ -282,7 +282,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={styles.flexContainer} style={{maxWidth:"25%",overflow:"hidden",margin:"0 auto"}}>
+        <div className={styles.flexContainer} style={{maxWidth:"90%",overflow:"hidden",margin:"0 auto"}}>
           <h1>How To Buy</h1>
           <div>
             <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
@@ -323,7 +323,7 @@ OXOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
             </div>
           </div>
         </div>
-        <div className={styles.flexContainer} style={{maxWidth:"25%",overflow:"hidden",margin:"0 auto"}}>
+        <div className={styles.flexContainer} style={{maxWidth:"90%",overflow:"hidden",margin:"0 auto"}}>
           <h1>Roadmap</h1>
           <div>
             Phase 1
@@ -332,7 +332,7 @@ OXOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
               <br/>
               - $USD Website Launches
               <br/>
-              - $USD Reaches 1,000 Degen Hodlers
+              - $USD Reaches I,OOO Degen Hodlers
               <br/>
               - $USD Lists on CG and CMC
               <br/>

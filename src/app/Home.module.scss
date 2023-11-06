@@ -326,7 +326,7 @@
     background-repeat: no-repeat;
   
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     // align-items: center;
     justify-content: space-evenly;
     gap: 5rem;
@@ -364,7 +364,6 @@
         text-align: center;
       }
       .flexContainer{
-        
         max-width: 90% !important;
       }
     }
