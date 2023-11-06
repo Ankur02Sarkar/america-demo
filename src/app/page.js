@@ -251,144 +251,87 @@ export default function Home() {
         <img src="/images/gif/explosions.gif" alt="divider" />
       </div>
 
-      <section className={styles.testinomialSection2}>
-        <div className={styles.filter}></div>
-        <div className={styles.flexContainer} style={{maxWidth:"90%",overflow:"hidden", margin:"0 auto"}}>
-          <h1>Tokenomics</h1>
-          <div>
-            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              {/* <h2> */}
-                <div className="flex flex-row text-center">
-                  O %
-                </div>
-                Buy Tax
-              {/* </h2> */}
-            </div>
-            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              {/* <h2> */}
-                <div className="flex flex-row text-center">
-                  O %
-                </div>
-                Sell Tax
-              {/* </h2> */}
-            </div>
-            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              {/* <h2> */}
-                <div className="flex flex-row text-center">
-                  Supply
-                </div>
-                IOO,OOO,OOO,OOO,OO (9O% Added to uniswap)
-              {/* </h2> */}
-            </div>
-          </div>
-        </div>
-        <div className={styles.flexContainer} style={{maxWidth:"90%",overflow:"hidden",margin:"0 auto"}}>
-          <h1>How To Buy</h1>
-          <div>
-            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              {/* <h2 style={{fontSize:"1em"}}> */}
-                <div className="flex flex-row text-center">
-                  Step 1
-                </div>
-                Download Metamask or wallet of your choice from the app store or Google Play store for free. Desktop users, download the Google Chrome extension by going to metamask.io.
-              {/* </h2> */}
-            </div>
-            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              {/* <h2 style={{fontSize:"1em"}}> */}
-                <div className="flex flex-row text-center">
-                  Step 2
-                </div>
-                Have ETH in your wallet to switch to $USD. If you don’t have any ETH, you can buy directly on Metamask, transfer from another wallet, or buy on another exchange and send it to your wallet.
-              {/* </h2> */}
-            </div>
-            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              {/* <h2 style={{fontSize:"1em"}}> */}
-                <div className="flex flex-row text-center">
-                  Step 3
-                </div>
-                Switch ETH for $USD. We have 0% taxes so you don’t need to worry about buying with a specific slippage, although you may need to use slippage during times of market volatility.
-              {/* </h2> */}
-            </div>
-            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px",overflow:"hidden"}}>
-              {/* <h2 style={{fontSize:"1em"}}> */}
-                <div className="flex flex-row text-center">
-                  Step 4
-                </div>
-                <div>
-                Prepare for $USD
-                Contract Address :
-OXOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-                </div>
-              {/* </h2> */}
-            </div>
-          </div>
-        </div>
-        <div className={styles.flexContainer} style={{maxWidth:"90%",overflow:"hidden",margin:"0 auto"}}>
+      <section className={styles.main}>
+        <div className={styles.roadmap} id="roadmap">
           <h1>Roadmap</h1>
-          <div>
-            Phase 1
-            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              - $USD Token Launches
-              <br/>
-              - $USD Website Launches
-              <br/>
-              - $USD Reaches I,OOO Degen Hodlers
-              <br/>
-              - $USD Lists on CG and CMC
-              <br/>
-              - $USD on your Social Feed
-              <br/>
-              - #Buy $USD Starts Trending on Twitter
+
+          <div className={styles.content}>
+            <div className={styles.phase}>
+              <div className={styles.title}>
+                <h1>Phase 1</h1>
+                <img src="/images/gif/explosion.gif" alt="explosion" />
+              </div>
+              <div className={styles.box}>
+                <p>- $USD Token Launches</p>
+                <p>- $USD Website Launches</p>
+                <p>- $USD Reaches 1,000 Degen Hodlers</p>
+                <p>- $USD Lists on CG and CMC</p>
+                <p>- $USD on your Social Feed</p>
+                <p>- #Buy$USD Starts Trending on Twitter</p>
+              </div>
+            </div>
+
+            <div className={styles.phase}>
+              <div className={styles.title}>
+                <h1>Phase 2</h1>
+                <img src="/images/gif/explosion.gif" alt="explosion" />
+              </div>
+            </div>
+
+            <div className={styles.phase}>
+              <div className={styles.title}>
+                <h1>Phase 3</h1>
+                <img src="/images/gif/explosion.gif" alt="explosion" />
+              </div>
             </div>
           </div>
-          {/* <div>
-            Phase 2
-            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              - $USD Token Launches
-              <br/>
-              - $USD Website Launches
-              <br/>
-              - $USD Reaches 1,000 Degen Hodlers
-              <br/>
-              - $USD Lists on CG and CMC
-              <br/>
-              - $USD on your Social Feed
-              <br/>
-              - #Buy $USD Starts Trending on Twitter
+        </div>
+
+        <div className={styles.tokenomics} id="tokenomics">
+          <h1>Tokennomics</h1>
+          <div className={styles.grid}>
+            <div className={styles.box}>
+              <p>O%</p>
+              <p>BUY TAX</p>
+            </div>
+
+            <div className={styles.box}>
+              <p>O%</p>
+              <p>SELL TAX</p>
+            </div>
+
+            <div className={styles.box} style={{ gridColumn: '-1/1' }}>
+              <p>SUPPLY</p>
+              <p>IOO,OOO,OOO,OOO,OO (9O% ADDED TO UNISWAP)</p>
             </div>
           </div>
-          <div>
-            Phase 3
-            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              - $USD Token Launches
-              <br/>
-              - $USD Website Launches
-              <br/>
-              - $USD Reaches 1,000 Degen Hodlers
-              <br/>
-              - $USD Lists on CG and CMC
-              <br/>
-              - $USD on your Social Feed
-              <br/>
-              - #Buy $USD Starts Trending on Twitter
+        </div>
+
+        <div className={styles.buy} id="buy">
+          <h1>How To Buy</h1>
+
+          <div className={styles.grid}>
+            <div className={styles.box}>
+              <p>Step 1</p>
+              <p>Download Metamask or wallet of your choice from the app store or Google Play store for free. Desktop users, download the Google Chrome extension by going to metamask.io.</p>
+            </div>
+
+            <div className={styles.box}>
+              <p>Step 2</p>
+              <p>Have ETH in your wallet to switch to $USD. If you don't have any ETH, you can buy directly on Metamask, transfer from another wallet, or buy on another exchange and send it to your wallet.</p>
+            </div>
+
+            <div className={styles.box}>
+              <p>Step 3</p>
+              <p>Switch ETH for $USD. We have 0% taxes so you don't need to worry about buying with a specific slippage, although you may need to use slippage during times of market volatility.</p>
+            </div>
+
+            <div className={styles.box}>
+              <p>Step 4</p>
+              <p>Prepare for $USD</p>
+              <p>Contract Address: <br />OxOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</p>
             </div>
           </div>
-          <div>
-            Phase 4
-            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
-              - $USD Token Launches
-              <br/>
-              - $USD Website Launches
-              <br/>
-              - $USD Reaches 1,000 Degen Hodlers
-              <br/>
-              - $USD Lists on CG and CMC
-              <br/>
-              - $USD on your Social Feed
-              <br/>
-              - #Buy $USD Starts Trending on Twitter
-            </div>
-          </div> */}
         </div>
       </section>
 

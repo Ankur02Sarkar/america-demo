@@ -15,9 +15,9 @@ export default function Header() {
 
                 <div className={styles.navLinks}>
                     <Link href="/">Home</Link>
-                    <Link href="/about">About</Link>
-                    <Link href="/tokenomics">Tokenomics</Link>
-                    <Link href="/buy">How To Buy</Link>
+                    <Link href="#roadmap">Roadmap</Link>
+                    <Link href="#tokenomics">Tokenomics</Link>
+                    <Link href="#buy">How To Buy</Link>
                 </div>
 
                 <div className={styles.socialLinks}>
