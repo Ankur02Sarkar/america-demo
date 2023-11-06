@@ -253,7 +253,7 @@ export default function Home() {
 
       <section className={styles.testinomialSection2}>
         <div className={styles.filter}></div>
-        <div style={{maxWidth:"25%"}}>
+        <div className={styles.flexContainer} style={{maxWidth:"25%",overflow:"hidden", margin:"0 auto"}}>
           <h1>Tokenomics</h1>
           <div>
             <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
@@ -282,7 +282,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div style={{maxWidth:"25%"}}>
+        <div className={styles.flexContainer} style={{maxWidth:"25%",overflow:"hidden",margin:"0 auto"}}>
           <h1>How To Buy</h1>
           <div>
             <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
@@ -309,19 +309,21 @@ export default function Home() {
                 Switch ETH for $USD. We have 0% taxes so you don’t need to worry about buying with a specific slippage, although you may need to use slippage during times of market volatility.
               {/* </h2> */}
             </div>
-            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px"}}>
+            <div style={{border:"1px solid white",padding:"10px", borderRadius:"10px", fontSize:"1rem",margin:"10px",overflow:"hidden"}}>
               {/* <h2 style={{fontSize:"1em"}}> */}
                 <div className="flex flex-row text-center">
                   Step 4
                 </div>
+                <div>
                 Prepare for $USD
                 Contract Address :
 OXOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+                </div>
               {/* </h2> */}
             </div>
           </div>
         </div>
-        <div style={{maxWidth:"25%"}}>
+        <div className={styles.flexContainer} style={{maxWidth:"25%",overflow:"hidden",margin:"0 auto"}}>
           <h1>Roadmap</h1>
           <div>
             Phase 1
