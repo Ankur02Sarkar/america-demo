@@ -114,11 +114,7 @@ export default function Home() {
         <div className={styles.topBar}>
           {/* <img src="/images/gif/machineGun.gif" alt="machine gun" id={styles.gun} /> */}
           <img src="/images/hands.png" alt="trump hands" id={styles.hands} />
-          <img
-            src="/images/gif/trumpeyeroll.gif"
-            alt="trump"
-            id={styles.trump}
-          />
+          <img src="/images/trump.png" alt="trump" id={styles.trump} />
         </div>
         <video
           src={"/america.mp4"}
@@ -145,16 +141,19 @@ export default function Home() {
 
       <section className={styles.memeSection}>
         <div className={styles.filter}></div>
-        <img src="/images/meme.svg" />
-        <img
+        <img src="/images/meme2.svg" />
+        {/* <img
           src="/images/stock.svg"
           alt="box"
           style={{ position: "absolute", top: "5%", left: "15%", scale: "0.7" }}
-        />
+        /> */}
         <div className={styles.messageBox}>
           <img src="/images/box.svg" alt="box" />
 
-          <p className={styles.akira}>
+          <p
+            className={styles.akira}
+            style={{ position: "absolute", top: "30%" }}
+          >
             <a href="#" className={styles.akira}>
               CLICK HERE
             </a>{" "}

@@ -60,6 +60,7 @@
       position: absolute;
       width: 10%;
       inset: auto 17.5% -82% auto;
+      top: -1px;
 
       clip-path: inset(0% 0% 42% 0%);
     }
@@ -168,7 +169,7 @@
 
 .memeSection {
   background-image: url("/images/gif/meme-bg.gif");
-  background-size: contain;
+  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 
