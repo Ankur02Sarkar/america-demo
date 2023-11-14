@@ -399,7 +399,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <img src="/images/banner.svg" alt="America Banner" />
       <section className={styles.gallerySection}>
         <div>
           <img src="/images/gallery/meme-1.png" alt="gallery" />
