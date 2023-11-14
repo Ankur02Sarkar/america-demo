@@ -314,9 +314,28 @@ export default function Home() {
 
         <div className={styles.tokenomics} id="tokenomics">
           <h1>Tokennomics</h1>
-          <img src="/images/plane.png" alt="plane" id={styles.jet1} style={{rotate:"-42deg"}} />
-          <img src="/images/plane.png" alt="plane" id={styles.jet2} style={{rotate:"-42deg"}} />
-          <img src="/images/plane.png" alt="plane" id={styles.jet3} style={{rotate:"-42deg"}} />
+          <img
+            src="/images/plane.png"
+            alt="plane"
+            id={styles.jet1}
+            style={{ rotate: "-42deg" }}
+          />
+          <img
+            src="/images/plane.png"
+            alt="plane"
+            id={styles.jet2}
+            style={{ rotate: "-42deg" }}
+          />
+          <img
+            src="/images/plane.png"
+            alt="plane"
+            id={styles.jet3}
+            style={{ rotate: "-42deg" }}
+          />
+          {/*  */}
+          <img src="/images/plane.png" alt="plane" id={styles.jet4} />
+          <img src="/images/plane.png" alt="plane" id={styles.jet5} />
+          <img src="/images/plane.png" alt="plane" id={styles.jet6} />
 
           <div className={styles.grid} style={{ textAlign: "center" }}>
             <div className={styles.box}>

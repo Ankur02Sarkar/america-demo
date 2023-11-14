@@ -427,6 +427,40 @@
     }
   }
 
+  #jet4 {
+    position: absolute;
+    right: 0;
+    rotate: 42deg;
+    transform: scaleX(-1);
+    top: 60vw;
+    animation: jet4 2s ease-in infinite;
+  }
+
+  #jet5 {
+    position: absolute;
+    right: 0;
+    rotate: 42deg;
+    transform: scaleX(-1);
+    top: 70vw;
+  }
+  #jet6 {
+    position: absolute;
+    right: 0;
+    rotate: 42deg;
+    transform: scaleX(-1);
+    top: 80vw;
+  }
+  @keyframes jet4 {
+    0% {
+      right: 0;
+      top: 60vw;
+    }
+    100% {
+      right: 100%;
+      top: 0;
+    }
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
