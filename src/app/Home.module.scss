@@ -442,6 +442,7 @@
     rotate: 42deg;
     transform: scaleX(-1);
     top: 70vw;
+    animation: jet5 2s ease-in infinite;
   }
   #jet6 {
     position: absolute;
@@ -449,11 +450,32 @@
     rotate: 42deg;
     transform: scaleX(-1);
     top: 80vw;
+    animation: jet6 2s ease-in infinite;
   }
   @keyframes jet4 {
     0% {
       right: 0;
       top: 60vw;
+    }
+    100% {
+      right: 100%;
+      top: 0;
+    }
+  }
+  @keyframes jet5 {
+    0% {
+      right: 0;
+      top: 70vw;
+    }
+    100% {
+      right: 100%;
+      top: 0;
+    }
+  }
+  @keyframes jet6 {
+    0% {
+      right: 0;
+      top: 80vw;
     }
     100% {
       right: 100%;
