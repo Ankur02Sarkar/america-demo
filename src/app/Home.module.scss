@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Akira Expanded";
+  src: url(/fonts/AkiraExpanded.otf);
+}
+
+@font-face {
+  font-family: "Alfa Slab One";
+  src: url(/fonts/AlfaSlabOne.ttf);
+}
+
+.akira {
+  font-family: "Akira Expanded" !important;
+  font-weight: 800;
+}
+
 .videoSection {
   position: relative;
   inset: 0 0;
@@ -152,7 +167,7 @@
 }
 
 .memeSection {
-  background-image: url('/images/gif/meme-bg.gif');
+  background-image: url("/images/gif/meme-bg.gif");
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
@@ -176,7 +191,7 @@
 
       width: 100%;
 
-      color: #FFF;
+      color: #fff;
       font-weight: 400;
       font-size: min(1vw, 1rem);
 
@@ -187,11 +202,11 @@
 
       @keyframes link {
         0% {
-          color: #BF0A30;
+          color: #bf0a30;
         }
 
         33% {
-          color: #FFF;
+          color: #fff;
         }
 
         66% {
@@ -199,7 +214,7 @@
         }
 
         100% {
-          color: #BF0A30;
+          color: #bf0a30;
         }
       }
     }
@@ -238,7 +253,7 @@
   width: 100%;
   min-height: 70vh;
 
-  background-image: url('/images/gif/testinomials-bg.gif');
+  background-image: url("/images/gif/testinomials-bg.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -272,7 +287,7 @@
     width: 100%;
     height: fit-content;
 
-    color: #FFF;
+    color: #fff;
     font-size: min(5rem, 3vw);
     font-weight: 400;
     white-space: nowrap;
@@ -320,11 +335,9 @@
 
         svg {
           font-size: 2.6rem;
-          color: #FFF;
+          color: #fff;
         }
-
       }
-
     }
   }
 }
@@ -334,7 +347,7 @@
   width: 100%;
   min-height: 100vh;
 
-  background-image: url('/images/gif/meme-bg.gif');
+  background-image: url("/images/gif/meme-bg.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -346,7 +359,7 @@
   gap: 5rem;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0 0;
 
@@ -359,7 +372,7 @@
 
   h1 {
     padding-top: 2rem;
-    color: #FFF;
+    color: #fff;
     font-weight: 400;
     text-align: center;
     font-size: 2rem;
@@ -386,11 +399,11 @@
       min-height: 10rem;
       padding: 1.25rem;
 
-      color: #FFF;
-      font-family: 'American Pride';
+      color: #fff;
+      font-family: "American Pride";
       font-size: 1.5rem;
 
-      border: 3px solid #FFF;
+      border: 3px solid #fff;
       border-radius: 1rem;
     }
   }
@@ -410,6 +423,7 @@
 
     .phase {
       display: flex;
+      // align-items: center;
       flex-direction: column;
       gap: 1rem;
 
@@ -419,10 +433,17 @@
         position: relative;
 
         h1 {
-          color: #FFF;
+          color: #fff;
           font-weight: 400;
           font-size: 1.5rem;
           z-index: 10;
+        }
+
+        .titleHeading {
+          font-family: "Akira Expanded";
+          font-weight: 800;
+          position: relative;
+          left: 7rem;
         }
 
         img {
@@ -435,7 +456,6 @@
           object-fit: contain;
           mix-blend-mode: screen;
         }
-
       }
 
       .box {
@@ -446,12 +466,16 @@
         min-height: 10rem;
         padding: 1.25rem;
 
-        color: #FFF;
-        font-family: 'American Pride';
+        color: #fff;
+        font-family: "Alfa Slab One" !important;
         font-size: 1rem;
 
-        border: 3px solid #FFF;
+        border: 3px solid #fff;
         border-radius: 1rem;
+
+        p {
+          font-family: "Alfa Slab One" !important;
+        }
       }
     }
   }
@@ -477,12 +501,17 @@
       min-height: 10rem;
       padding: 1.25rem;
 
-      color: #FFF;
-      font-family: 'American Pride';
+      color: #fff;
+      font-family: "American Pride";
       font-size: 1rem;
 
-      border: 3px solid #FFF;
+      border: 3px solid #fff;
       border-radius: 1rem;
+
+      .para {
+        font-family: "Alfa Slab One";
+        font-weight: 400;
+      }
     }
   }
 }
@@ -500,13 +529,13 @@
   display: grid;
   gap: 0rem;
 
-  >div {
+  > div {
     position: relative;
 
     img {
       width: 100%;
       height: auto;
-      transition: all .5s;
+      transition: all 0.5s;
     }
 
     img:nth-of-type(2) {
@@ -549,7 +578,6 @@
         }
       }
     }
-
   }
 }
 

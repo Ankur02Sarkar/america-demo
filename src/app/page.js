@@ -258,7 +258,7 @@ export default function Home() {
           <div className={styles.content}>
             <div className={styles.phase}>
               <div className={styles.title}>
-                <h1>Phase 1</h1>
+                <h1 className={styles.titleHeading}>Phase 1</h1>
                 <img src="/images/gif/explosion.gif" alt="explosion" />
               </div>
               <div className={styles.box}>
@@ -273,7 +273,7 @@ export default function Home() {
 
             <div className={styles.phase}>
               <div className={styles.title}>
-                <h1>Phase 2</h1>
+                <h1 className={styles.titleHeading}>Phase 2</h1>
                 <img src="/images/gif/explosion.gif" alt="explosion" />
               </div>
               <div className={styles.box}>
@@ -288,7 +288,7 @@ export default function Home() {
 
             <div className={styles.phase}>
               <div className={styles.title}>
-                <h1>Phase 3</h1>
+                <h1 className={styles.titleHeading}>Phase 3</h1>
                 <img src="/images/gif/explosion.gif" alt="explosion" />
               </div>
               <div className={styles.box}>
@@ -305,20 +305,22 @@ export default function Home() {
 
         <div className={styles.tokenomics} id="tokenomics">
           <h1>Tokennomics</h1>
-          <div className={styles.grid}>
+          <div className={styles.grid} style={{ textAlign: "center" }}>
             <div className={styles.box}>
-              <p>O%</p>
+              <p className={styles.akira}>O%</p>
               <p>BUY TAX</p>
             </div>
 
             <div className={styles.box}>
-              <p>O%</p>
+              <p className={styles.akira}>O%</p>
               <p>SELL TAX</p>
             </div>
 
-            <div className={styles.box} style={{ gridColumn: '-1/1' }}>
+            <div className={styles.box} style={{ gridColumn: "-1/1" }}>
               <p>SUPPLY</p>
-              <p>IOO,OOO,OOO,OOO,OO (9O% ADDED TO UNISWAP)</p>
+              <p style={{ textAlign: "start" }} className={styles.akira}>
+                IOO,OOO,OOO,OOO,OO (9O% ADDED TO UNISWAP)
+              </p>
             </div>
           </div>
         </div>
@@ -329,23 +331,38 @@ export default function Home() {
           <div className={styles.grid}>
             <div className={styles.box}>
               <p>Step 1</p>
-              <p>Download Metamask or wallet of your choice from the app store or Google Play store for free. Desktop users, download the Google Chrome extension by going to metamask.io.</p>
+              <p className={styles.para}>
+                Download Metamask or wallet of your choice from the app store or
+                Google Play store for free. Desktop users, download the Google
+                Chrome extension by going to metamask.io.
+              </p>
             </div>
 
             <div className={styles.box}>
               <p>Step 2</p>
-              <p>Have ETH in your wallet to switch to $USD. If you don't have any ETH, you can buy directly on Metamask, transfer from another wallet, or buy on another exchange and send it to your wallet.</p>
+              <p className={styles.para}>
+                Have ETH in your wallet to switch to $USD. If you don't have any
+                ETH, you can buy directly on Metamask, transfer from another
+                wallet, or buy on another exchange and send it to your wallet.
+              </p>
             </div>
 
             <div className={styles.box}>
               <p>Step 3</p>
-              <p>Switch ETH for $USD. We have 0% taxes so you don't need to worry about buying with a specific slippage, although you may need to use slippage during times of market volatility.</p>
+              <p className={styles.para}>
+                Switch ETH for $USD. We have 0% taxes so you don't need to worry
+                about buying with a specific slippage, although you may need to
+                use slippage during times of market volatility.
+              </p>
             </div>
 
             <div className={styles.box}>
               <p>Step 4</p>
               <p>Prepare for $USD</p>
-              <p>Contract Address: <br />OxOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</p>
+              <p className={styles.para}>
+                Contract Address: <br />
+                OxOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+              </p>
             </div>
           </div>
         </div>
