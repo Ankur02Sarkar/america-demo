@@ -387,16 +387,19 @@
 
   #jet1 {
     position: absolute;
+    scale: 1.5;
     top: 70vw;
     animation: jet1 2s ease-in infinite;
   }
   #jet2 {
     position: absolute;
+    scale: 1.5;
     top: 80vw;
     animation: jet2 2s ease-in infinite;
   }
   #jet3 {
     position: absolute;
+    scale: 1.5;
     top: 90vw;
     animation: jet3 2s ease-in infinite;
   }
@@ -430,6 +433,7 @@
 
   #jet4 {
     position: absolute;
+    scale: 1.5;
     right: 0;
     rotate: 42deg;
     transform: scaleX(-1);
@@ -439,6 +443,7 @@
 
   #jet5 {
     position: absolute;
+    scale: 1.5;
     right: 0;
     rotate: 42deg;
     transform: scaleX(-1);
@@ -447,6 +452,7 @@
   }
   #jet6 {
     position: absolute;
+    scale: 1.5;
     right: 0;
     rotate: 42deg;
     transform: scaleX(-1);

@@ -14,7 +14,7 @@ export default function Header() {
                 <div className={styles.lines}></div>
 
                 <div className={styles.navLinks}>
-                    <Link href="#about">About</Link>
+                    <Link href="#roadmap">Roadmap</Link>
                     <Link href="#tokenomics">Tokenomics</Link>
                     <Link href="#buy">How To Buy</Link>
                     <Link href="#links">Links</Link>
