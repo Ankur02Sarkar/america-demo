@@ -146,10 +146,19 @@ export default function Home() {
       <section className={styles.memeSection}>
         <div className={styles.filter}></div>
         <img src="/images/meme.svg" />
+        <img
+          src="/images/stock.svg"
+          alt="box"
+          style={{ position: "absolute", top: "5%", left: "15%", scale: "0.7" }}
+        />
         <div className={styles.messageBox}>
           <img src="/images/box.svg" alt="box" />
-          <p>
-            <a href="#">CLICK HERE</a> FOR THE FAT STIMMY
+
+          <p className={styles.akira}>
+            <a href="#" className={styles.akira}>
+              CLICK HERE
+            </a>{" "}
+            FOR THE FAT STIMMY
           </p>
         </div>
         <img src="/images/plane.png" alt="plane" id={styles.jet} />
@@ -305,6 +314,10 @@ export default function Home() {
 
         <div className={styles.tokenomics} id="tokenomics">
           <h1>Tokennomics</h1>
+          <img src="/images/plane.png" alt="plane" id={styles.jet1} style={{rotate:"-42deg"}} />
+          <img src="/images/plane.png" alt="plane" id={styles.jet2} style={{rotate:"-42deg"}} />
+          <img src="/images/plane.png" alt="plane" id={styles.jet3} style={{rotate:"-42deg"}} />
+
           <div className={styles.grid} style={{ textAlign: "center" }}>
             <div className={styles.box}>
               <p className={styles.akira}>O%</p>

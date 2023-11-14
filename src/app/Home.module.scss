@@ -384,6 +384,49 @@
   place-content: center;
   gap: 3rem;
 
+  #jet1 {
+    position: absolute;
+    top: 70vw;
+    animation: jet1 2s ease-in infinite;
+  }
+  #jet2 {
+    position: absolute;
+    top: 80vw;
+    animation: jet2 2s ease-in infinite;
+  }
+  #jet3 {
+    position: absolute;
+    top: 90vw;
+    animation: jet3 2s ease-in infinite;
+  }
+  @keyframes jet1 {
+    0% {
+      transform: translate(-100%, -100%);
+    }
+
+    100% {
+      transform: translate(100vw, 0vh);
+    }
+  }
+  @keyframes jet2 {
+    0% {
+      transform: translate(-100%, -100%);
+    }
+
+    100% {
+      transform: translate(100vw, -10vh);
+    }
+  }
+  @keyframes jet3 {
+    0% {
+      transform: translate(-100%, -100%);
+    }
+
+    100% {
+      transform: translate(100vw, 10vh);
+    }
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
