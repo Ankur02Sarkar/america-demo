@@ -142,6 +142,15 @@ export default function Home() {
       <section className={styles.memeSection}>
         <div className={styles.filter}></div>
         <img src="/images/meme2.svg" />
+        <div className={styles.messageBox} style={{ top: "7%", right: "3%" }}>
+          <img src="/images/box.svg" alt="box" />
+
+          <p className={styles.akira}>
+            ECONOMY GOT YOU DOWN?
+            <br />
+            NEED CASH QUICK?
+          </p>
+        </div>
         {/* <img
           src="/images/stock.svg"
           alt="box"
