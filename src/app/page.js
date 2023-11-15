@@ -495,6 +495,26 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <h1
+        style={{
+          color: "white",
+          fontSize: "2rem",
+          textAlign: "center",
+          fontWeight: "400",
+          marginTop: '2rem'
+        }}
+      >
+        Disclamer
+      </h1>
+
+      <p style={{
+        color: '#FFF',
+        textAlign: 'center',
+        paddingBottom: '4rem'
+      }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maiores ipsa rem facere laboriosam, magni veniam fugiat magnam tempora ex, esse dolorum deserunt, quis aspernatur?
+      </p>
     </main>
   );
 }
