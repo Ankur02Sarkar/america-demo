@@ -141,6 +141,11 @@ export default function Home() {
 
       <section className={styles.memeSection}>
         <div className={styles.filter}></div>
+        <img
+          src="/images/stock.svg"
+          alt="box"
+          style={{ position: "absolute", top: "5%", scale: "0.7" }}
+        />
         <div
           className={styles.messageBox}
           style={{
@@ -154,6 +159,7 @@ export default function Home() {
           <p className={styles.akira}>
             “nothing says the *American Dream* quite like turning your
             greenbacks into green stonks” - George Washington, probably
+            <br />
             ---------------------------------------------
             <br />
             <br />
@@ -192,11 +198,7 @@ export default function Home() {
             NEED CASH QUICK?
           </p>
         </div>
-        <img
-          src="/images/stock.svg"
-          alt="box"
-          style={{ position: "absolute", top: "5%", left: "10%", scale: "0.7" }}
-        />
+        
         <div className={styles.messageBox} style={{ top: "30%" }}>
           <img src="/images/box.svg" alt="box" />
 
