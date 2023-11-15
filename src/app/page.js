@@ -164,15 +164,12 @@ export default function Home() {
         <div className={styles.filter}></div>
         <img src="/images/meme.svg" alt="" />
 
-        <img src="/images/gun.svg" id={styles.gun}/>
+        <img src="/images/gun.svg" id={styles.gun} />
 
-        <div className={styles.messageBox} style={{ top: "30%" }}>
+        <div className={styles.messageBox} style={{ top: "22%" }}>
           <img src="/images/box.svg" alt="box" />
 
-          <p
-            className={styles.akira}
-            style={{ position: "absolute", top: "30%" }}
-          >
+          <p className={styles.akira}>
             <a href="#" className={styles.akira}>
               CLICK HERE
             </a>{" "}
