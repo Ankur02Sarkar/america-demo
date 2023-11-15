@@ -110,21 +110,42 @@ export default function Home() {
 
   return (
     <main className={styles.home}>
+
       <section className={styles.videoSection}>
         <div className={styles.topBar}>
-          {/* <img src="/images/gif/machineGun.gif" alt="machine gun" id={styles.gun} /> */}
+          <img src="/images/gif/machineGun.gif" alt="machine gun" id={styles.gun} />
           <img src="/images/hands.png" alt="trump hands" id={styles.hands} />
           <img src="/images/trump.png" alt="trump" id={styles.trump} />
+
+          <div className={styles.carousel}>
+            <div className={styles.logoContainer}>
+              <div className={styles.sliderContainer}>
+                {[...Array(5).keys()].map((i) => (
+                  <div className={styles.slider} key={i}>
+                    <p>$USD</p>
+                    <p>$USD</p>
+                    <p>$USD</p>
+                    <p>$USD</p>
+                    <p>$USD</p>
+                    <p>$USD</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
+
         <video
           src={"/america.mp4"}
           loop={true}
           ref={video}
           muted={isMuted || tempMuted}
         />
+
         <button className={styles.muteBtn} onClick={() => setIsMuted(!isMuted)}>
           <img src={isMuted ? "/icons/unmute.svg" : "/icons/mute.svg"} />
         </button>
+
         <div className={styles.bottomBar}>
           <img src="/images/soldier.png" alt="soldier" id={styles.soldier} />
           <div className={styles.rocketContainer}>
@@ -141,64 +162,10 @@ export default function Home() {
 
       <section className={styles.memeSection}>
         <div className={styles.filter}></div>
-        <img
-          src="/images/stock.svg"
-          alt="box"
-          style={{ position: "absolute", top: "5%", scale: "0.7" }}
-        />
-        <div
-          className={styles.messageBox}
-          style={{
-            position: "absolute",
-            top: "5%",
-            left: "50%",
-            transform: "translateX(-50%)",
-            width: "35%",
-          }}
-        >
-          <p className={styles.akira}>
-            “nothing says the *American Dream* quite like turning your
-            greenbacks into green stonks” - George Washington, probably
-            <br />
-            ---------------------------------------------
-            <br />
-            <br />
-            What does it really mean to be American in 2023? Crippling economy?
-            Sky high medical bills? inflation? Civil unrest?
-            <br />
-            USD is in the bin.
-            <br />
-            Americans have always innovated when no one else did. Its time for
-            us to set the new global standard.. We're making $USd great again
-            <br />
-          </p>
-        </div>
-        <div>
-          <img src="/images/guy3.svg" style={{ float: "right" }} />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              width: "100%",
-            }}
-          >
-            <img src="/images/guy1.svg" />
-            <img src="/images/guy2.svg" />
-          </div>
-        </div>
-        <img
-          src="/images/gun.svg"
-          style={{ position: "relative" }}
-        />
-        <div className={styles.messageBox} style={{ top: "7%", right: "3%" }}>
-          <img src="/images/box.svg" alt="box" />
-          <p className={styles.akira}>
-            ECONOMY GOT YOU DOWN?
-            <br />
-            NEED CASH QUICK?
-          </p>
-        </div>
-        
+        <img src="/images/meme.svg" alt="" />
+
+        <img src="/images/gun.svg" id={styles.gun}/>
+
         <div className={styles.messageBox} style={{ top: "30%" }}>
           <img src="/images/box.svg" alt="box" />
 
@@ -312,6 +279,19 @@ export default function Home() {
       </div>
 
       <section className={styles.main}>
+        <div className={styles.jetOverlay}>
+          <div className={styles.left}>
+            <img src="/images/jet.png" alt="plane" />
+            <img src="/images/jet.png" alt="plane" />
+            <img src="/images/jet.png" alt="plane" />
+          </div>
+          <div className={styles.right}>
+            <img src="/images/jet.png" alt="plane" />
+            <img src="/images/jet.png" alt="plane" />
+            <img src="/images/jet.png" alt="plane" />
+          </div>
+        </div>
+
         <div className={styles.roadmap} id="roadmap">
           <h1>Roadmap</h1>
 
@@ -365,7 +345,9 @@ export default function Home() {
 
         <div className={styles.tokenomics} id="tokenomics">
           <h1>Tokennomics</h1>
-          <img
+
+
+          {/* <img
             src="/images/plane.png"
             alt="plane"
             id={styles.jet1}
@@ -383,10 +365,9 @@ export default function Home() {
             id={styles.jet3}
             style={{ rotate: "-42deg" }}
           />
-          {/*  */}
           <img src="/images/plane.png" alt="plane" id={styles.jet4} />
           <img src="/images/plane.png" alt="plane" id={styles.jet5} />
-          <img src="/images/plane.png" alt="plane" id={styles.jet6} />
+          <img src="/images/plane.png" alt="plane" id={styles.jet6} /> */}
 
           <div className={styles.grid} style={{ textAlign: "center" }}>
             <div className={styles.box}>
@@ -450,7 +431,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <img src="/images/banner.svg" alt="America Banner" />
+
       <section className={styles.gallerySection}>
         <div>
           <img src="/images/gallery/meme-1.png" alt="gallery" />
@@ -484,6 +467,7 @@ export default function Home() {
       >
         Sponsored By
       </h1>
+
       <div className={styles.logoStrip}>
         <div className={styles.logoContainer}>
           <div className={styles.sliderContainer}>

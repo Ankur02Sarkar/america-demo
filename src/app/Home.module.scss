@@ -18,6 +18,10 @@
   inset: 0 0;
   margin-top: 2.5%;
 
+  isolation: isolate;
+
+  z-index: 10;
+
   .muteBtn {
     position: absolute;
     inset: 15% 2.5vw;
@@ -39,19 +43,69 @@
     width: 100%;
     height: 12.5%;
 
-    z-index: 10;
+    // z-index: 10;
 
     pointer-events: none;
 
-    // #gun {
-    //   position: absolute;
-    //   inset: 0 0;
-    //   height: 100%;
-    // }
+    .carousel {
+      position: absolute;
+      inset: -2.5rem 0;
+
+      width: 100%;
+
+      z-index: -10;
+
+      .logoContainer {
+        overflow: hidden;
+
+        .sliderContainer {
+          display: flex;
+          gap: 1rem;
+          min-width: fit-content;
+
+          .slider {
+            display: flex;
+            gap: 2rem;
+            min-width: fit-content;
+            animation: marquee 20s linear infinite;
+
+            p {
+              color: #FFF;
+              font-size: 1.5rem;
+              opacity: 0.5;
+
+              &:nth-of-type(1) {
+                font-family: 'Arbutus', serif;
+              }
+              &:nth-of-type(2) {
+                font-family: 'Bungee', sans-serif;
+              }
+              &:nth-of-type(3) {
+                font-family: 'Inter', sans-serif;
+              }
+              &:nth-of-type(5) {
+                font-family: 'Arbutus', serif;
+              }
+              &:nth-of-type(6) {
+                font-family: 'Bungee', sans-serif;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #gun {
+      position: absolute;
+      inset: -3rem 3rem;
+      height: 3.5rem;
+
+      z-index: -5;
+    }
 
     #hands {
       position: absolute;
-      inset: auto 10% -35% auto;
+      inset: auto 10% 68% auto;
 
       width: 25%;
     }
@@ -59,11 +113,14 @@
     #trump {
       position: absolute;
       width: 10%;
-      inset: auto 17.5% -82% auto;
-      top: -1px;
+      inset: auto 17.5% 26% auto;
 
       clip-path: inset(0% 0% 42% 0%);
     }
+  }
+
+  video {
+    margin-top: 11rem;
   }
 
   .bottomBar {
@@ -169,7 +226,7 @@
 
 .memeSection {
   background-image: url("/images/gif/meme-bg.gif");
-  background-size: cover;
+  background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
 
@@ -178,6 +235,10 @@
   overflow: hidden;
 
   padding: 18vh 0rem 0rem;
+
+  #gun {
+    margin-top: -19%;
+  }
 
   .messageBox {
     position: absolute;
@@ -355,6 +416,7 @@
 
   position: relative;
   isolation: isolate;
+  overflow: hidden;
 
   display: grid;
   gap: 5rem;
@@ -378,117 +440,64 @@
     text-align: center;
     font-size: 2rem;
   }
+
+  .jetOverlay {
+    position: absolute;
+    inset: 50% 0%;
+
+    transform: translateY(-50%);
+
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left,
+    .right {
+      display: grid;
+      gap: 2rem;
+
+      img {
+        height: 25vh;
+        transform: translateX(-40%);
+
+        animation: jets 2s ease-in-out infinite;
+
+        // &:nth-of-type(1) {
+        //   animation-delay: .5s;
+        // }
+        // &:nth-of-type(2) {
+        //   animation-delay: 1.5s;
+        // }
+        // &:nth-of-type(3) {
+        //   animation-delay: 2s;
+        // }
+      }
+    }
+
+    .right {
+      transform: rotateY(180deg);
+    }
+  }
+
+  @keyframes jets {
+    0% {
+      transform: translate(-100%, 0%);
+    }
+
+    100% {
+      transform: translate(100vw, -25vh);
+    }
+  }
 }
+
 
 .tokenomics {
   display: grid;
   place-content: center;
   gap: 3rem;
-
-  #jet1 {
-    position: absolute;
-    scale: 1.5;
-    top: 70vw;
-    animation: jet1 2s ease-in infinite;
-  }
-  #jet2 {
-    position: absolute;
-    scale: 1.5;
-    top: 80vw;
-    animation: jet2 2s ease-in infinite;
-  }
-  #jet3 {
-    position: absolute;
-    scale: 1.5;
-    top: 90vw;
-    animation: jet3 2s ease-in infinite;
-  }
-  @keyframes jet1 {
-    0% {
-      transform: translate(-100%, -100%);
-    }
-
-    100% {
-      transform: translate(100vw, 0vh);
-    }
-  }
-  @keyframes jet2 {
-    0% {
-      transform: translate(-100%, -100%);
-    }
-
-    100% {
-      transform: translate(100vw, -10vh);
-    }
-  }
-  @keyframes jet3 {
-    0% {
-      transform: translate(-100%, -100%);
-    }
-
-    100% {
-      transform: translate(100vw, 10vh);
-    }
-  }
-
-  #jet4 {
-    position: absolute;
-    scale: 1.5;
-    right: 0;
-    rotate: 42deg;
-    transform: scaleX(-1);
-    top: 60vw;
-    animation: jet4 2s ease-in infinite;
-  }
-
-  #jet5 {
-    position: absolute;
-    scale: 1.5;
-    right: 0;
-    rotate: 42deg;
-    transform: scaleX(-1);
-    top: 70vw;
-    animation: jet5 2s ease-in infinite;
-  }
-  #jet6 {
-    position: absolute;
-    scale: 1.5;
-    right: 0;
-    rotate: 42deg;
-    transform: scaleX(-1);
-    top: 80vw;
-    animation: jet6 2s ease-in infinite;
-  }
-  @keyframes jet4 {
-    0% {
-      right: 0;
-      top: 60vw;
-    }
-    100% {
-      right: 100%;
-      top: 0;
-    }
-  }
-  @keyframes jet5 {
-    0% {
-      right: 0;
-      top: 70vw;
-    }
-    100% {
-      right: 100%;
-      top: 0;
-    }
-  }
-  @keyframes jet6 {
-    0% {
-      right: 0;
-      top: 80vw;
-    }
-    100% {
-      right: 100%;
-      top: 0;
-    }
-  }
 
   .grid {
     display: grid;
@@ -511,6 +520,19 @@
 
       border: 3px solid #fff;
       border-radius: 1rem;
+
+      &:nth-of-type(1) {
+        background: hsla(217, 100%, 20%, 0.2);
+      }
+
+      &:nth-of-type(2) {
+        background: hsla(0, 0%, 100%, 0.2);
+      }
+
+      &:nth-of-type(3) {
+        background: hsla(0, 100%, 29%, 0.2);
+      }
+
     }
   }
 }
@@ -532,6 +554,18 @@
       // align-items: center;
       flex-direction: column;
       gap: 1rem;
+
+      &:nth-of-type(1) .box {
+        background: #00286842;
+      }
+
+      &:nth-of-type(2) .box {
+        background: #FFFFFF40;
+      }
+
+      &:nth-of-type(3) .box {
+        background: #FF000042;
+      }
 
       .title {
         width: fit-content;
@@ -614,6 +648,8 @@
       border: 3px solid #fff;
       border-radius: 1rem;
 
+      background: #0000003D;
+
       .para {
         font-family: "Alfa Slab One";
         font-weight: 400;
@@ -635,7 +671,7 @@
   display: grid;
   gap: 0rem;
 
-  > div {
+  >div {
     position: relative;
 
     img {
