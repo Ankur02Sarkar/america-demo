@@ -141,22 +141,63 @@ export default function Home() {
 
       <section className={styles.memeSection}>
         <div className={styles.filter}></div>
-        <img src="/images/meme2.svg" />
+        <div
+          className={styles.messageBox}
+          style={{
+            position: "absolute",
+            top: "5%",
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: "35%",
+          }}
+        >
+          <p className={styles.akira}>
+            “nothing says the *American Dream* quite like turning your
+            greenbacks into green stonks” - George Washington, probably
+            ---------------------------------------------
+            <br />
+            <br />
+            What does it really mean to be American in 2023? Crippling economy?
+            Sky high medical bills? inflation? Civil unrest?
+            <br />
+            USD is in the bin.
+            <br />
+            Americans have always innovated when no one else did. Its time for
+            us to set the new global standard.. We're making $USd great again
+            <br />
+          </p>
+        </div>
+        <div>
+          <img src="/images/guy3.svg" style={{ float: "right" }} />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              width: "100%",
+            }}
+          >
+            <img src="/images/guy1.svg" />
+            <img src="/images/guy2.svg" />
+          </div>
+        </div>
+        <img
+          src="/images/gun.svg"
+          style={{ position: "relative" }}
+        />
         <div className={styles.messageBox} style={{ top: "7%", right: "3%" }}>
           <img src="/images/box.svg" alt="box" />
-
           <p className={styles.akira}>
             ECONOMY GOT YOU DOWN?
             <br />
             NEED CASH QUICK?
           </p>
         </div>
-        {/* <img
+        <img
           src="/images/stock.svg"
           alt="box"
-          style={{ position: "absolute", top: "5%", left: "15%", scale: "0.7" }}
-        /> */}
-        <div className={styles.messageBox}>
+          style={{ position: "absolute", top: "5%", left: "10%", scale: "0.7" }}
+        />
+        <div className={styles.messageBox} style={{ top: "30%" }}>
           <img src="/images/box.svg" alt="box" />
 
           <p
