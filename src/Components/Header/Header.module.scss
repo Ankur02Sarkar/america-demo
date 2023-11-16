@@ -38,12 +38,11 @@
       transform: translateY(-50%);
 
       width: calc(100% - 2rem);
-      height: 0.15rem;
+      height: 0.7rem;
 
       background: #ffffff;
 
-      box-shadow: 0px -1rem #ffffff, 0px -2rem #ffffff, 0px 1rem #ffffff,
-        0px 2rem #ffffff;
+      box-shadow: 0px -2rem #ffffff, 0px 2rem #ffffff;
 
       z-index: -1;
     }
