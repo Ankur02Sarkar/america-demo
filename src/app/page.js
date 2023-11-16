@@ -113,7 +113,7 @@ export default function Home() {
 
       <section className={styles.videoSection}>
         <div className={styles.topBar}>
-          <img src="/images/gif/machineGun.gif" alt="machine gun" id={styles.gun} />
+          {/* <img src="/images/gif/machineGun.gif" alt="machine gun" id={styles.gun} /> */}
           <img src="/images/hands.png" alt="trump hands" id={styles.hands} />
           <img src="/images/trump.png" alt="trump" id={styles.trump} />
 
