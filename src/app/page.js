@@ -452,6 +452,9 @@ export default function Home() {
           <img src="/images/gallery/meme-5.png" alt="gallery" />
           <img src="/images/gallery/meme-5.gif" alt="gallery" />
         </div>
+        <div>
+          <img src="/images/newMeme.svg" alt="gallery" />
+        </div>
       </section>
 
       <h1
