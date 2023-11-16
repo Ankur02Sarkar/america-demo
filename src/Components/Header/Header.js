@@ -18,6 +18,7 @@ export default function Header() {
                     <Link href="#tokenomics">Tokenomics</Link>
                     <Link href="#buy">How To Buy</Link>
                     <Link href="#links">Links</Link>
+                    <img src="/images/dropdown.svg" />
                 </div>
 
                 <div className={styles.socialLinks}>
