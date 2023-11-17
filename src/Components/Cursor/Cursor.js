@@ -16,7 +16,7 @@ export default function Cursor() {
     return (
         <div className={styles.cursorContainer}>
             <div className={styles.cursor} style={cursorStyle}>
-                <img src="/gun.png" alt="gun" />
+                <img src="/gun.png" alt="gun" className={styles.cursorGun} />
                 <img src="/muzzle.png" alt="muzzle" className={styles.muzzle} id={cursor.down ? styles.flash : null} />
             </div>
         </div>

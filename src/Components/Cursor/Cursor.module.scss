@@ -1,45 +1,50 @@
 .cursorContainer {
-    position: fixed;
-    inset: 0 0;
+  position: fixed;
+  inset: 0 0;
 
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    z-index: 100;
-    
-    pointer-events: none;
-    user-select: none;
+  z-index: 100;
+
+  pointer-events: none;
+  user-select: none;
 }
 
 .cursor {
+  position: absolute;
+  inset: 0 0;
+
+  width: 10rem;
+  height: 6rem;
+
+  .muzzle {
     position: absolute;
     inset: 0 0;
 
-    width: 10rem;
-    height: 6rem;
+    width: 50%;
+    transform: translate(9rem, 0.75rem);
 
-    .muzzle {
-        position: absolute;
-        inset: 0 0;
+    opacity: 0;
+  }
 
-        width: 50%;
-        transform: translate(9rem, 0.75rem);
-
-        opacity: 0;
+  #flash {
+    animation: muzzle-flash 0.1s ease infinite;
+  }
+  @media only screen and (max-width: 768px) {
+    .cursorGun {
+      display: none;
     }
-    
-    #flash {
-        animation: muzzle-flash 0.1s ease infinite;
-    }
+  }
 
-    @keyframes muzzle-flash {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
+  @keyframes muzzle-flash {
+    0% {
+      opacity: 1;
     }
+    100% {
+      opacity: 0;
+    }
+  }
 }
