@@ -38,12 +38,14 @@
     }
     @media only screen and (max-width: 650px) {
       img {
+        margin: auto;
         height: 75vh;
       }
     }
 
     @media only screen and (max-width: 500px) {
       img {
+        margin: auto;
         height: 65vh;
       }
     }
@@ -93,14 +95,14 @@
       }
       @media only screen and (max-width: 650px) {
         span {
-          top: 25%;
+          top: 40%;
           left: 50%;
         }
       }
 
       @media only screen and (max-width: 500px) {
         span {
-          top: 25%;
+          top: 40%;
           left: 50%;
           gap: 1.7rem;
         }
