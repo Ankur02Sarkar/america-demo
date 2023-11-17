@@ -1,152 +1,175 @@
 @font-face {
-    font-family: 'Just Me Again Down Here';
-    src: url(/fonts/JustMeAgainDownHere-Regular.ttf);
+  font-family: "Just Me Again Down Here";
+  src: url(/fonts/JustMeAgainDownHere-Regular.ttf);
 }
 
 .introScreen {
-    position: fixed;
+  position: fixed;
+  inset: 0 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background: #000;
+
+  transition: background 4s linear;
+
+  z-index: 100;
+
+  .container {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: opacity 0.5s ease-in-out;
+
+    img {
+      position: absolute;
+      inset: 0% 50%;
+      transform: translateX(-50%);
+
+      min-width: fit-content;
+      width: 100%;
+      height: 100vh;
+
+      object-fit: cover;
+    }
+    @media only screen and (max-width: 650px) {
+      img {
+        height: 75vh;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      img {
+        height: 65vh;
+      }
+    }
+
+    .btnContainer {
+      position: absolute;
+      inset: 0 0;
+
+      width: 100%;
+      height: 100vh;
+
+      // background: hsla(0, 100%, 50%, 0.2);
+
+      span {
+        position: absolute;
+        inset: 50% 50%;
+
+        height: fit-content;
+        width: fit-content;
+
+        transform: translate(-1.5rem, 6rem) rotate(18deg);
+
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+
+        // outline: 1px solid #000;
+
+        a {
+          background: transparent;
+          outline: none;
+          border: none;
+          font-family: "Just Me Again Down Here";
+          font-size: 3.5rem;
+          text-decoration: none;
+
+          cursor: pointer;
+
+          &:nth-of-type(1) {
+            color: rgb(0, 0, 0);
+          }
+
+          &:nth-of-type(2) {
+            color: rgb(3, 3, 3);
+          }
+        }
+      }
+      @media only screen and (max-width: 650px) {
+        span {
+          top: 25%;
+          left: 50%;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        span {
+          top: 25%;
+          left: 50%;
+          gap: 1.7rem;
+        }
+      }
+    }
+  }
+
+  .eagles {
+    display: none;
+
+    position: absolute;
     inset: 0 0;
 
     width: 100%;
     height: 100vh;
 
-    background: #000;
+    width: 100%;
+    height: 100vh;
 
-    transition: background 4s linear;
+    .eagleRow {
+      width: 100%;
+      overflow: hidden;
 
-    z-index: 100;
+      .slider {
+        margin-bottom: 2.5vh;
 
-    .container {
         width: 100%;
-        height: 100vh;
+        display: grid;
+        grid-auto-flow: column;
 
-        position: relative;
-        overflow: hidden;
-
-        transition: opacity 0.5s ease-in-out;
+        animation: fly 3s ease-in-out forwards;
 
         img {
-            position: absolute;
-            inset: 0% 50%;
-            transform: translateX(-50%);
+          max-width: min-content;
+          height: 10vh;
 
-            min-width: fit-content;
-            width: 100%;
-            height: 100vh;
-
-            object-fit: cover;
+          &:nth-of-type(even) {
+            transform: translateY(2.5vh);
+          }
         }
 
-        .btnContainer {
-            position: absolute;
-            inset: 0 0;
-
-            width: 100%;
-            height: 100vh;
-
-            // background: hsla(0, 100%, 50%, 0.2);
-
-            span {
-                position: absolute;
-                inset: 50% 50%;
-
-                height: fit-content;
-                width: fit-content;
-
-                transform: translate(-1.5rem, 6rem) rotate(18deg);
-
-                display: flex;
-                align-items: center;
-                gap: 4rem;
-
-                // outline: 1px solid #000;
-
-                a {
-                    background: transparent;
-                    outline: none;
-                    border: none;
-                    font-family: 'Just Me Again Down Here';
-                    font-size: 3.5rem;
-                    text-decoration: none;
-
-                    cursor: pointer;
-
-                    &:nth-of-type(1) {
-                        color: rgb(0, 0, 0);
-                    }
-
-                    &:nth-of-type(2) {
-                        color: rgb(3, 3, 3);
-                    }
-                }
-            }
+        &:nth-of-type(even) {
+          margin-left: 10vh;
+          animation-duration: 3.15s;
         }
+      }
     }
-
-    .eagles {
-        display: none;
-
-        position: absolute;
-        inset: 0 0;
-
-        width: 100%;
-        height: 100vh;
-
-        width: 100%;
-        height: 100vh;
-
-        .eagleRow {
-            width: 100%;
-            overflow: hidden;
-
-            .slider {
-                margin-bottom: 2.5vh;
-
-                width: 100%;
-                display: grid;
-                grid-auto-flow: column;
-
-                animation: fly 3s ease-in-out forwards;
-
-                img {
-                    max-width: min-content;
-                    height: 10vh;
-
-                    &:nth-of-type(even) {
-                        transform: translateY(2.5vh);
-                    }
-                }
-
-                &:nth-of-type(even) {
-                    margin-left: 10vh;
-                    animation-duration: 3.15s;
-                }
-            }
-        }
-    }
+  }
 }
-
 
 #hide {
-    background: transparent;
-    pointer-events: none;
+  background: transparent;
+  pointer-events: none;
 
-    .container {
-        opacity: 0;
-    }
+  .container {
+    opacity: 0;
+  }
 
-    .eagles {
-        display: unset;
-    }
+  .eagles {
+    display: unset;
+  }
 }
 
-
 @keyframes fly {
-    0% {
-        transform: translateX(-250%);
-    }
+  0% {
+    transform: translateX(-250%);
+  }
 
-    100% {
-        transform: translateX(100%);
-    }
+  100% {
+    transform: translateX(100%);
+  }
 }

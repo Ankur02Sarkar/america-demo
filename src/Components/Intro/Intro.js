@@ -11,7 +11,7 @@ export default function Intro() {
     <div className={styles.introScreen} id={hide ? styles.hide : null}>
       
       <div className={styles.container}>
-        <img src={smile ? "/intro-smile.png" : "/intro.png"} useMap="#image-map" />
+        <img src={smile ? "/intro-smile.png" : "/intro.png"} useMap="#image-map" style={styles.introImg} />
 
         <div className={styles.btnContainer}>
           <span>
