@@ -24,7 +24,7 @@ export default function Intro() {
             >
               Yes
             </a>
-            <a href="https://www.uscis.gov/citizenship/learn-about-citizenship/10-steps-to-naturalization" target="_Blank">No</a>
+            <a href="https://www.uscis.gov/citizenship/apply-for-citizenship" target="_Blank">No</a>
           </span>
         </div>
       </div>
@@ -40,6 +40,7 @@ export default function Intro() {
           ))}
         </div>
       </div>
+      
     </div>
   );
 
