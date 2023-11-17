@@ -110,7 +110,6 @@ export default function Home() {
 
   return (
     <main className={styles.home}>
-
       <section className={styles.videoSection}>
         <div className={styles.topBar}>
           {/* <img src="/images/gif/machineGun.gif" alt="machine gun" id={styles.gun} /> */}
@@ -140,6 +139,7 @@ export default function Home() {
           loop={true}
           ref={video}
           muted={isMuted || tempMuted}
+          playsInline={true}
         />
 
         <button className={styles.muteBtn} onClick={() => setIsMuted(!isMuted)}>
@@ -162,8 +162,8 @@ export default function Home() {
 
       <section className={styles.memeSection}>
         <div className={styles.filter}></div>
-        <img src="/images/meme.png" alt="" id={styles.desktop}/>
-        <img src="/images/meme-mobile.svg" alt="" id={styles.mobile}/>
+        <img src="/images/meme.png" alt="" id={styles.desktop} />
+        <img src="/images/meme-mobile.svg" alt="" id={styles.mobile} />
 
         <div className={styles.messageBox} style={{ top: "22%" }}>
           <img src="/images/box.svg" alt="box" />
@@ -346,7 +346,6 @@ export default function Home() {
         <div className={styles.tokenomics} id="tokenomics">
           <h1>Tokennomics</h1>
 
-
           {/* <img
             src="/images/plane.png"
             alt="plane"
@@ -459,7 +458,6 @@ export default function Home() {
           <img src="/images/gallery/gallery-6.png" alt="gallery" />
           <img src="/images/gallery/gallery-6.gif" alt="gallery" />
         </div>
-        
       </section>
 
       <h1
@@ -510,20 +508,24 @@ export default function Home() {
           fontSize: "2rem",
           textAlign: "center",
           fontWeight: "400",
-          marginBlock: '2rem'
+          marginBlock: "2rem",
         }}
       >
         Disclamer
       </h1>
 
-      <p style={{
-        color: '#FFF',
-        textAlign: 'center',
-        paddingBottom: '4rem',
-        paddingInline: '5vw',
-        fontFamily: 'Akira Expanded'
-      }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maiores ipsa rem facere laboriosam, magni veniam fugiat magnam tempora ex, esse dolorum deserunt, quis aspernatur?
+      <p
+        style={{
+          color: "#FFF",
+          textAlign: "center",
+          paddingBottom: "4rem",
+          paddingInline: "5vw",
+          fontFamily: "Akira Expanded",
+        }}
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maiores ipsa
+        rem facere laboriosam, magni veniam fugiat magnam tempora ex, esse
+        dolorum deserunt, quis aspernatur?
       </p>
     </main>
   );
