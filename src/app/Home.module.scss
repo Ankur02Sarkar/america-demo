@@ -313,7 +313,8 @@
 
   @media only screen and (max-width: 768px) {
     padding: 4rem 0rem;
-    #desktop, .messageBox {
+    #desktop,
+    .messageBox {
       display: none;
     }
 
@@ -646,6 +647,12 @@
       }
     }
   }
+  @media only screen and (max-width: 450px) {
+    .content {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
 }
 
 .buy {
@@ -698,7 +705,7 @@
   display: grid;
   gap: 0rem;
 
-  background-image: url('/images/flag-bg.png');
+  background-image: url("/images/flag-bg.png");
   background-size: cover;
   // background-position: center;
 
