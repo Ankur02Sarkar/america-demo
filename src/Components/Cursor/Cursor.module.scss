@@ -33,12 +33,8 @@
   #flash {
     animation: muzzle-flash 0.1s ease infinite;
   }
-  @media only screen and (max-width: 768px) {
-    .cursorGun {
-      display: none;
-    }
-  }
-
+  
+  
   @keyframes muzzle-flash {
     0% {
       opacity: 1;
@@ -46,5 +42,11 @@
     100% {
       opacity: 0;
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cursor {
+    display: none;
   }
 }
