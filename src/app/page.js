@@ -113,7 +113,7 @@ export default function Home() {
 
       <section className={styles.videoSection}>
         <div className={styles.topBar}>
-          {/* <img src="/images/gif/machineGun.gif" alt="machine gun" id={styles.gun} /> */}
+          <img src="/images/gif/machineGun.gif" alt="machine gun" id={styles.gun} />
           <img src="/images/hands.png" alt="trump hands" id={styles.hands} />
           <img src="/images/trump.png" alt="trump" id={styles.trump} />
 
@@ -162,9 +162,8 @@ export default function Home() {
 
       <section className={styles.memeSection}>
         <div className={styles.filter}></div>
-        <img src="/images/meme.svg" alt="" />
-
-        <img src="/images/gun.svg" id={styles.gun} />
+        <img src="/images/meme.png" alt="" id={styles.desktop}/>
+        <img src="/images/meme-mobile.svg" alt="" id={styles.mobile}/>
 
         <div className={styles.messageBox} style={{ top: "22%" }}>
           <img src="/images/box.svg" alt="box" />
@@ -178,6 +177,8 @@ export default function Home() {
         </div>
         <img src="/images/plane.png" alt="plane" id={styles.jet} />
       </section>
+
+      <img src="/images/gun.svg" id={styles.rocketLauncher} />
 
       <section className={styles.testinomialSection}>
         <div className={styles.filter}></div>
@@ -269,6 +270,8 @@ export default function Home() {
             </button>
           </div>
         </div>
+
+        <h2>CA: 0x000...000</h2>
       </section>
 
       <div className={styles.explosions}>
@@ -433,28 +436,30 @@ export default function Home() {
 
       <section className={styles.gallerySection}>
         <div>
-          <img src="/images/gallery/meme-1.png" alt="gallery" />
-          <img src="/images/gallery/meme-1.gif" alt="gallery" />
+          <img src="/images/gallery/gallery-1.png" alt="gallery" />
+          <img src="/images/gallery/gallery-1.gif" alt="gallery" />
         </div>
         <div>
-          <img src="/images/gallery/meme-2.png" alt="gallery" />
-          <img src="/images/gallery/meme-2.gif" alt="gallery" />
+          <img src="/images/gallery/gallery-2.png" alt="gallery" />
+          <img src="/images/gallery/gallery-2.gif" alt="gallery" />
         </div>
         <div>
-          <img src="/images/gallery/meme-3.png" alt="gallery" />
-          <img src="/images/gallery/meme-3.gif" alt="gallery" />
+          <img src="/images/gallery/gallery-3.png" alt="gallery" />
+          <img src="/images/gallery/gallery-3.gif" alt="gallery" />
         </div>
         <div>
-          <img src="/images/gallery/meme-4.png" alt="gallery" />
-          <img src="/images/gallery/meme-4.gif" alt="gallery" />
+          <img src="/images/gallery/gallery-4.png" alt="gallery" />
+          <img src="/images/gallery/gallery-4.gif" alt="gallery" />
         </div>
         <div>
-          <img src="/images/gallery/meme-5.png" alt="gallery" />
-          <img src="/images/gallery/meme-5.gif" alt="gallery" />
+          <img src="/images/gallery/gallery-5.png" alt="gallery" />
+          <img src="/images/gallery/gallery-5.gif" alt="gallery" />
         </div>
         <div>
-          <img src="/images/newMeme.svg" alt="gallery" />
+          <img src="/images/gallery/gallery-6.png" alt="gallery" />
+          <img src="/images/gallery/gallery-6.gif" alt="gallery" />
         </div>
+        
       </section>
 
       <h1
@@ -505,7 +510,7 @@ export default function Home() {
           fontSize: "2rem",
           textAlign: "center",
           fontWeight: "400",
-          marginTop: '2rem'
+          marginBlock: '2rem'
         }}
       >
         Disclamer
@@ -514,7 +519,9 @@ export default function Home() {
       <p style={{
         color: '#FFF',
         textAlign: 'center',
-        paddingBottom: '4rem'
+        paddingBottom: '4rem',
+        paddingInline: '5vw',
+        fontFamily: 'Akira Expanded'
       }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maiores ipsa rem facere laboriosam, magni veniam fugiat magnam tempora ex, esse dolorum deserunt, quis aspernatur?
       </p>
