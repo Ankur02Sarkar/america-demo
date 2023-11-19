@@ -4,10 +4,13 @@ import styles from './Header.module.scss';
 
 import { FaTelegramPlane } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6'
+import { useState } from "react";
 
 export default function Header() {
+    const [zIndex, setZIndex] = useState(5);
+
     return (
-        <header className={styles.header}>
+        <header className={styles.header} style={{zIndex: zIndex}}>
             <img src="/images/flag-stars.svg" />
 
             <div className={styles.navContainer}>
@@ -17,7 +20,7 @@ export default function Header() {
                     <Link href="#roadmap">Roadmap</Link>
                     <Link href="#tokenomics">Tokenomics</Link>
                     <Link href="#buy">How To Buy</Link>
-                    <span href="#links" id={styles.dropDownLink}>
+                    <span href="#links" id={styles.dropDownLink} onMouseEnter={() => setZIndex(10)} onMouseLeave={() => setZIndex(5)}>
                         Links <img src="/images/dropdown.svg" />
                         
                         <div className={styles.dropDown}>
