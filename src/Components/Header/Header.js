@@ -18,9 +18,9 @@ export default function Header() {
                 <div className={styles.lines}></div>
 
                 <div className={styles.navLinks}>
-                    <Link href="#roadmap">Roadmap</Link>
-                    <Link href="#tokenomics">Tokenomics</Link>
-                    <Link href="#buy">How To Buy</Link>
+                    <Link href="/#roadmap">Roadmap</Link>
+                    <Link href="/#tokenomics">Tokenomics</Link>
+                    <Link href="/#buy">How To Buy</Link>
                     <span href="#links" id={styles.dropDownLink} onMouseEnter={() => setZIndex(10)} onMouseLeave={() => setZIndex(5)}>
                         Links <img src="/images/dropdown.svg" />
                         

@@ -5,6 +5,7 @@ import styles from "./Home.module.scss";
 import useSound from "use-sound";
 import { MdOutlinePlayCircle, MdPauseCircleOutline } from "react-icons/md";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const video = useRef(null);
@@ -346,28 +347,6 @@ export default function Home() {
         <div className={styles.tokenomics} id="tokenomics">
           <h1>Tokennomics</h1>
 
-          {/* <img
-            src="/images/plane.png"
-            alt="plane"
-            id={styles.jet1}
-            style={{ rotate: "-42deg" }}
-          />
-          <img
-            src="/images/plane.png"
-            alt="plane"
-            id={styles.jet2}
-            style={{ rotate: "-42deg" }}
-          />
-          <img
-            src="/images/plane.png"
-            alt="plane"
-            id={styles.jet3}
-            style={{ rotate: "-42deg" }}
-          />
-          <img src="/images/plane.png" alt="plane" id={styles.jet4} />
-          <img src="/images/plane.png" alt="plane" id={styles.jet5} />
-          <img src="/images/plane.png" alt="plane" id={styles.jet6} /> */}
-
           <div className={styles.grid} style={{ textAlign: "center" }}>
             <div className={styles.box}>
               <p className={styles.akira}>O%</p>
@@ -505,10 +484,10 @@ export default function Home() {
       <h1
         style={{
           color: "white",
-          fontSize: "2rem",
+          fontSize: "1rem",
           textAlign: "center",
           fontWeight: "400",
-          marginBlock: "2rem",
+          marginBlock: "1rem",
         }}
       >
         Disclamer
@@ -518,15 +497,20 @@ export default function Home() {
         style={{
           color: "#FFF",
           textAlign: "center",
-          paddingBottom: "4rem",
+          paddingBottom: "1rem",
           paddingInline: "5vw",
           fontFamily: "Akira Expanded",
+          fontSize: '0.65rem',
+          fontWeight: '400'
         }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maiores ipsa
-        rem facere laboriosam, magni veniam fugiat magnam tempora ex, esse
-        dolorum deserunt, quis aspernatur?
+        Please be advised that $USD is a cryptocurrency created for entertainment purposes and is not affiliated with or endorsed by The United States of America. $USD may reference or incorporate elements related to the $USD's, image, or likeness, it does not imply any direct endorsement, partnership, or approval by The United States of America. Any resemblance or association between $USD and the US dollar is purely coincidental and intended for humorous purposes.
       </p>
+
+      <div className={styles.footer}>
+        <Link href="/terms">Terms of Service</Link>
+        <Link href="/privacy">Privacy Policy</Link>
+      </div>
     </main>
   );
 }

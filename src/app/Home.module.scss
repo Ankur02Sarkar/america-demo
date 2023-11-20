@@ -71,15 +71,19 @@
               &:nth-of-type(1) {
                 font-family: "Arbutus", serif;
               }
+
               &:nth-of-type(2) {
                 font-family: "Bungee", sans-serif;
               }
+
               &:nth-of-type(3) {
                 font-family: "Inter", sans-serif;
               }
+
               &:nth-of-type(5) {
                 font-family: "Arbutus", serif;
               }
+
               &:nth-of-type(6) {
                 font-family: "Bungee", sans-serif;
               }
@@ -313,6 +317,7 @@
 
   @media only screen and (max-width: 768px) {
     padding: 4rem 0rem;
+
     #desktop,
     .messageBox {
       display: none;
@@ -647,6 +652,7 @@
       }
     }
   }
+
   @media only screen and (max-width: 450px) {
     .content {
       width: 100%;
@@ -709,7 +715,7 @@
   background-size: cover;
   // background-position: center;
 
-  > div {
+  >div {
     position: relative;
     z-index: 5;
 
@@ -769,5 +775,22 @@
 
   100% {
     transform: translateX(-100%);
+  }
+}
+
+.footer {
+  margin: 0 auto;
+
+  padding: 0rem 2.5vw 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  a {
+    color: #FFF;
+    font-family: 'Akira Expanded';
+    font-size: 0.65rem;
+    text-decoration: none;
   }
 }
