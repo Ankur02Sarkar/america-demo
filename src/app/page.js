@@ -178,8 +178,8 @@ export default function Home() {
         </div>
         <img src="/images/plane.png" alt="plane" id={styles.jet} />
       </section>
-
       <img src="/images/gun.svg" id={styles.rocketLauncher} />
+      <img src="/images/pepe.png" id={styles.pepe} />
 
       <section className={styles.testinomialSection}>
         <div className={styles.filter}></div>
@@ -492,20 +492,39 @@ export default function Home() {
       >
         Disclamer
       </h1>
-
-      <p
-        style={{
-          color: "#FFF",
-          textAlign: "center",
-          paddingBottom: "1rem",
-          paddingInline: "5vw",
-          fontFamily: "Akira Expanded",
-          fontSize: '0.65rem',
-          fontWeight: '400'
-        }}
-      >
-        Please be advised that $USD is a cryptocurrency created for entertainment purposes and is not affiliated with or endorsed by The United States of America. $USD may reference or incorporate elements related to the $USD's, image, or likeness, it does not imply any direct endorsement, partnership, or approval by The United States of America. Any resemblance or association between $USD and the US dollar is purely coincidental and intended for humorous purposes.
-      </p>
+      <div style={{ position: "relative" }}>
+        <img
+          src="/images/pepe2.png"
+          style={{
+            position: "absolute",
+            top: "-4rem",
+            left: 0,
+            scale: "0.5",
+            zIndex: -1, // This places the image behind the text
+          }}
+          alt="box"
+        />
+        <p
+          style={{
+            color: "#FFF",
+            textAlign: "center",
+            paddingBottom: "1rem",
+            paddingInline: "5vw",
+            fontFamily: "Akira Expanded",
+            fontSize: "0.65rem",
+            fontWeight: "400",
+            position: "relative", // This ensures the text is positioned relative to the container
+          }}
+        >
+          Please be advised that $USD is a cryptocurrency created for
+          entertainment purposes and is not affiliated with or endorsed by The
+          United States of America. $USD may reference or incorporate elements
+          related to the $USD's, image, or likeness, it does not imply any
+          direct endorsement, partnership, or approval by The United States of
+          America. Any resemblance or association between $USD and the US dollar
+          is purely coincidental and intended for humorous purposes.
+        </p>
+      </div>
 
       <div className={styles.footer}>
         <img src="/images/sproto.png" alt="sproto" id={styles.sproto}/>
