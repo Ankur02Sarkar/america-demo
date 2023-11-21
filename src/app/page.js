@@ -508,6 +508,7 @@ export default function Home() {
       </p>
 
       <div className={styles.footer}>
+        <img src="/images/sproto.png" alt="sproto" id={styles.sproto}/>
         <Link href="/terms">Terms of Service</Link>
         <Link href="/privacy">Privacy Policy</Link>
       </div>

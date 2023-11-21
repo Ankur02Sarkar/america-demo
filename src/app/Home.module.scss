@@ -787,10 +787,20 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  position: relative;
+
   a {
     color: #FFF;
     font-family: 'Akira Expanded';
     font-size: 0.65rem;
     text-decoration: none;
+  }
+
+  #sproto {
+    position: absolute;
+    inset: auto 10% 0rem;
+
+    z-index: -1;
+    height: 10rem;
   }
 }
