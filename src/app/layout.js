@@ -14,9 +14,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <title>A M E R I C A</title>
-        <link rel="preload" href="/gun.png" as="image" />
-        <link rel="preload" href="/intro.png" as="image" />
-        <link rel="preload" href="/intro-smile.png" as="image" />
+        <link rel="preload" href="/gun.webp" as="image" />
+        <link rel="preload" href="/muzzle.webp" as="image" />
+        <link rel="preload" href="/intro.webp" as="image" />
+        <link rel="preload" href="/intro-smile.webp" as="image" />
         <link rel="icon" type="image/x-icon" href="/favicon.png" />
       </head>
       <body>

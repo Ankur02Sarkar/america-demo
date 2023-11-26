@@ -11,7 +11,7 @@ export default function Intro() {
     <div className={styles.introScreen} id={hide ? styles.hide : null}>
       
       <div className={styles.container}>
-        <img src={smile ? "/intro-smile.png" : "/intro.png"} useMap="#image-map" style={styles.introImg} />
+        <img src={smile ? "/intro-smile.webp" : "/intro.webp"} useMap="#image-map" style={styles.introImg} />
 
         <div className={styles.btnContainer}>
           <span>
@@ -34,7 +34,7 @@ export default function Intro() {
           {[...Array(8).keys()].map((i) => (
             <div className={styles.slider} key={i}>
               {[...Array(15).keys()].map((j) => (
-                <img key={j} src="/eagle.png" />
+                <img key={j} src="/eagle.webp" />
               ))}
             </div>
           ))}
