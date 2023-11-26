@@ -415,27 +415,27 @@ export default function Home() {
       <section className={styles.gallerySection}>
         <div>
           <img src="/images/gallery/gallery-1.png" alt="gallery" />
-          <img src="/images/gallery/gallery-1.gif" alt="gallery" />
+          <img src="/images/gallery/gallery-1.webp" alt="gallery" />
         </div>
         <div>
           <img src="/images/gallery/gallery-2.png" alt="gallery" />
-          <img src="/images/gallery/gallery-2.gif" alt="gallery" />
+          <img src="/images/gallery/gallery-2.webp" alt="gallery" />
         </div>
         <div>
           <img src="/images/gallery/gallery-3.png" alt="gallery" />
-          <img src="/images/gallery/gallery-3.gif" alt="gallery" />
+          <img src="/images/gallery/gallery-3.webp" alt="gallery" />
         </div>
         <div>
           <img src="/images/gallery/gallery-4.png" alt="gallery" />
-          <img src="/images/gallery/gallery-4.gif" alt="gallery" />
+          <img src="/images/gallery/gallery-4.webp" alt="gallery" />
         </div>
         <div>
           <img src="/images/gallery/gallery-5.png" alt="gallery" />
-          <img src="/images/gallery/gallery-5.gif" alt="gallery" />
+          <img src="/images/gallery/gallery-5.webp" alt="gallery" />
         </div>
         <div>
+          <img src="/images/gallery/gallery-6.webp" alt="gallery" />
           <img src="/images/gallery/gallery-6.png" alt="gallery" />
-          <img src="/images/gallery/gallery-6.gif" alt="gallery" />
         </div>
       </section>
 
