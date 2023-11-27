@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <link rel="preload" href="/muzzle.webp" as="image" />
         <link rel="preload" href="/intro.webp" as="image" />
         <link rel="preload" href="/intro-smile.webp" as="image" />
-        <link rel="icon" type="image/x-icon" href="/favicon.png" />
+        <link rel="icon" type="image/x-icon" href="/favicon.webp" />
       </head>
       <body>
         <Header />

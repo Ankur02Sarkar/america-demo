@@ -114,8 +114,8 @@ export default function Home() {
       <section className={styles.videoSection}>
         <div className={styles.topBar}>
           {/* <img src="/images/gif/machineGun.gif" alt="machine gun" id={styles.gun} /> */}
-          <img src="/images/hands.png" alt="trump hands" id={styles.hands} />
-          <img src="/images/trump.png" alt="trump" id={styles.trump} />
+          <img src="/images/hands.webp" alt="trump hands" id={styles.hands} />
+          <img src="/images/trump.webp" alt="trump" id={styles.trump} />
 
           <div className={styles.carousel}>
             <div className={styles.logoContainer}>
@@ -148,9 +148,9 @@ export default function Home() {
         </button>
 
         <div className={styles.bottomBar}>
-          <img src="/images/soldier.png" alt="soldier" id={styles.soldier} />
+          <img src="/images/soldier.webp" alt="soldier" id={styles.soldier} />
           <div className={styles.rocketContainer}>
-            <img src="/images/rocket.png" alt="rocket" id={styles.rocket} />
+            <img src="/images/rocket.webp" alt="rocket" id={styles.rocket} />
           </div>
           <img
             src="/images/gif/explosion.gif"
@@ -163,7 +163,7 @@ export default function Home() {
 
       <section className={styles.memeSection}>
         <div className={styles.filter}></div>
-        <img src="/images/meme.png" alt="" id={styles.desktop} />
+        <img src="/images/meme.webp" alt="" id={styles.desktop} />
         <img src="/images/meme-mobile.svg" alt="" id={styles.mobile} />
 
         <div className={styles.messageBox} style={{ top: "22%" }}>
@@ -176,7 +176,7 @@ export default function Home() {
             FOR THE FAT STIMMY
           </p>
         </div>
-        <img src="/images/plane.png" alt="plane" id={styles.jet} />
+        <img src="/images/plane.webp" alt="plane" id={styles.jet} />
       </section>
 
       <img src="/images/gun.svg" id={styles.rocketLauncher} />
@@ -191,7 +191,7 @@ export default function Home() {
 
         <div className={styles.testinomialContainer}>
           <div className={styles.testinomial}>
-            <img src="/images/testinomials/wizard-face.png" alt="wizard" />
+            <img src="/images/testinomials/wizard-face.webp" alt="wizard" />
             <button
               onClick={() => {
                 testinomial === "emperor"
@@ -207,7 +207,7 @@ export default function Home() {
             </button>
           </div>
           <div className={styles.testinomial}>
-            <img src="/images/testinomials/obama-face.png" alt="obama" />
+            <img src="/images/testinomials/obama-face.webp" alt="obama" />
             <button
               onClick={() => {
                 testinomial === "obama"
@@ -223,7 +223,7 @@ export default function Home() {
             </button>
           </div>
           <div className={styles.testinomial}>
-            <img src="/images/testinomials/borat-face.png" alt="borat" />
+            <img src="/images/testinomials/borat-face.webp" alt="borat" />
             <button
               onClick={() => {
                 testinomial === "borat"
@@ -239,7 +239,7 @@ export default function Home() {
             </button>
           </div>
           <div className={styles.testinomial}>
-            <img src="/images/testinomials/joe-face.png" alt="joe" />
+            <img src="/images/testinomials/joe-face.webp" alt="joe" />
             <button
               onClick={() => {
                 testinomial === "joe"
@@ -255,7 +255,7 @@ export default function Home() {
             </button>
           </div>
           <div className={styles.testinomial}>
-            <img src="/images/testinomials/trump-face.png" alt="trump" />
+            <img src="/images/testinomials/trump-face.webp" alt="trump" />
             <button
               onClick={() => {
                 testinomial === "trump"
@@ -282,14 +282,14 @@ export default function Home() {
       <section className={styles.main}>
         <div className={styles.jetOverlay}>
           <div className={styles.left}>
-            <img src="/images/jet.png" alt="plane" />
-            <img src="/images/jet.png" alt="plane" />
-            <img src="/images/jet.png" alt="plane" />
+            <img src="/images/jet.webp" alt="plane" />
+            <img src="/images/jet.webp" alt="plane" />
+            <img src="/images/jet.webp" alt="plane" />
           </div>
           <div className={styles.right}>
-            <img src="/images/jet.png" alt="plane" />
-            <img src="/images/jet.png" alt="plane" />
-            <img src="/images/jet.png" alt="plane" />
+            <img src="/images/jet.webp" alt="plane" />
+            <img src="/images/jet.webp" alt="plane" />
+            <img src="/images/jet.webp" alt="plane" />
           </div>
         </div>
 
@@ -414,28 +414,28 @@ export default function Home() {
 
       <section className={styles.gallerySection}>
         <div>
-          <img src="/images/gallery/gallery-1.png" alt="gallery" />
+          <img src="/images/gallery/gallery-01.webp" alt="gallery" />
           <img src="/images/gallery/gallery-1.webp" alt="gallery" />
         </div>
         <div>
-          <img src="/images/gallery/gallery-2.png" alt="gallery" />
+          <img src="/images/gallery/gallery-02.webp" alt="gallery" />
           <img src="/images/gallery/gallery-2.webp" alt="gallery" />
         </div>
         <div>
-          <img src="/images/gallery/gallery-3.png" alt="gallery" />
+          <img src="/images/gallery/gallery-03.webp" alt="gallery" />
           <img src="/images/gallery/gallery-3.webp" alt="gallery" />
         </div>
         <div>
-          <img src="/images/gallery/gallery-4.png" alt="gallery" />
+          <img src="/images/gallery/gallery-04.webp" alt="gallery" />
           <img src="/images/gallery/gallery-4.webp" alt="gallery" />
         </div>
         <div>
-          <img src="/images/gallery/gallery-5.png" alt="gallery" />
+          <img src="/images/gallery/gallery-05.webp" alt="gallery" />
           <img src="/images/gallery/gallery-5.webp" alt="gallery" />
         </div>
         <div>
           <img src="/images/gallery/gallery-6.webp" alt="gallery" />
-          <img src="/images/gallery/gallery-6.png" alt="gallery" />
+          <img src="/images/gallery/gallery-06.webp" alt="gallery" />
         </div>
       </section>
 
@@ -455,26 +455,26 @@ export default function Home() {
           <div className={styles.sliderContainer}>
             {[...Array(3).keys()].map((i) => (
               <div className={styles.slider} key={i}>
-                <img src="/images/logos/image-0.png" alt="logo" />
-                <img src="/images/logos/lockheedmartin-logo.png" alt="logo" />
-                <img src="/images/logos/image-1.png" alt="logo" />
-                <img src="/images/logos/walmart-logo.png" alt="logo" />
-                <img src="/images/logos/image-2.png" alt="logo" />
-                <img src="/images/logos/image-4.png" alt="logo" />
-                {/* <img src="/images/logos/apple-logo.png" alt="logo" /> */}
-                <img src="/images/logos/image-5.png" alt="logo" />
-                <img src="/images/logos/image-6.png" alt="logo" />
-                <img src="/images/logos/tesla-logo.png" alt="logo" />
-                <img src="/images/logos/image-7.png" alt="logo" />
-                <img src="/images/logos/image-8.png" alt="logo" />
-                <img src="/images/logos/boeing-logo.png" alt="logo" />
-                <img src="/images/logos/image-9.png" alt="logo" />
-                <img src="/images/logos/image-10.png" alt="logo" />
-                <img src="/images/logos/image-11.png" alt="logo" />
-                <img src="/images/logos/rtx-logo.png" alt="logo" />
-                <img src="/images/logos/image-12.png" alt="logo" />
-                <img src="/images/logos/image-13.png" alt="logo" />
-                <img src="/images/logos/image-14.png" alt="logo" />
+                <img src="/images/logos/image-0.webp" alt="logo" />
+                <img src="/images/logos/lockheedmartin-logo.webp" alt="logo" />
+                <img src="/images/logos/image-1.webp" alt="logo" />
+                <img src="/images/logos/walmart-logo.webp" alt="logo" />
+                <img src="/images/logos/image-2.webp" alt="logo" />
+                <img src="/images/logos/image-4.webp" alt="logo" />
+                {/* <img src="/images/logos/apple-logo.webp" alt="logo" /> */}
+                <img src="/images/logos/image-5.webp" alt="logo" />
+                <img src="/images/logos/image-6.webp" alt="logo" />
+                <img src="/images/logos/tesla-logo.webp" alt="logo" />
+                <img src="/images/logos/image-7.webp" alt="logo" />
+                <img src="/images/logos/image-8.webp" alt="logo" />
+                <img src="/images/logos/boeing-logo.webp" alt="logo" />
+                <img src="/images/logos/image-9.webp" alt="logo" />
+                <img src="/images/logos/image-10.webp" alt="logo" />
+                <img src="/images/logos/image-11.webp" alt="logo" />
+                <img src="/images/logos/rtx-logo.webp" alt="logo" />
+                <img src="/images/logos/image-12.webp" alt="logo" />
+                <img src="/images/logos/image-13.webp" alt="logo" />
+                <img src="/images/logos/image-14.webp" alt="logo" />
               </div>
             ))}
           </div>
@@ -508,7 +508,7 @@ export default function Home() {
       </p>
 
       <div className={styles.footer}>
-        <img src="/images/sproto.png" alt="sproto" id={styles.sproto}/>
+        <img src="/images/sproto.webp" alt="sproto" id={styles.sproto}/>
         <Link href="/terms">Terms of Service</Link>
         <Link href="/privacy">Privacy Policy</Link>
       </div>
