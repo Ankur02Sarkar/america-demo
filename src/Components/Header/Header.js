@@ -21,6 +21,7 @@ export default function Header() {
                     <Link href="/#roadmap">Roadmap</Link>
                     <Link href="/#tokenomics">Tokenomics</Link>
                     <Link href="/#buy">How To Buy</Link>
+                    <Link href="/declaration">Declaration</Link>
                     <span href="#links" id={styles.dropDownLink} onMouseEnter={() => setZIndex(10)} onMouseLeave={() => setZIndex(5)}>
                         Links <img src="/images/dropdown.svg" />
                         
