@@ -177,6 +177,21 @@ export default function Home() {
           </p>
         </div>
         <img src="/images/plane.webp" alt="plane" id={styles.jet} />
+        <a
+          href="https://yee-to-haw.vercel.app"
+          className={styles.akira}
+          style={{
+            position: "absolute",
+            left: "50%",
+            top: "70%",
+            fontSize: "5rem",
+            translate: "-50%",
+            color: "red",
+            zIndex:"999"
+          }}
+        >
+          GAINS
+        </a>
       </section>
 
       <img src="/images/gun.svg" id={styles.rocketLauncher} />
