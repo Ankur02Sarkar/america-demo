@@ -361,8 +361,15 @@ export default function Home() {
             <div className={styles.box} style={{ gridColumn: "-1/1" }}>
               <p>SUPPLY</p>
               <p style={{ textAlign: "start" }} className={styles.akira}>
-                IOO,OOO,OOO,OOO,OO (9O% ADDED TO UNISWAP)
+                IOO,OOO,OOO,OOO,OO (94% ADDED TO UNISWAP)
               </p>
+              <h5 style={{ textAlign: "left" }}>2% team (USDTEAM.ETH)</h5>
+              <h5 style={{ textAlign: "left" }}>
+                2% ADVISORY (USDADVISORY.ETH)
+              </h5>
+              <h5 style={{ textAlign: "left" }}>
+                2% MARKETING (USDMARKETING.ETH)
+              </h5>
             </div>
           </div>
         </div>
@@ -500,15 +507,21 @@ export default function Home() {
           paddingBottom: "1rem",
           paddingInline: "5vw",
           fontFamily: "Akira Expanded",
-          fontSize: '0.65rem',
-          fontWeight: '400'
+          fontSize: "0.65rem",
+          fontWeight: "400",
         }}
       >
-        Please be advised that $USD is a cryptocurrency created for entertainment purposes and is not affiliated with or endorsed by The United States of America. $USD may reference or incorporate elements related to the $USD's, image, or likeness, it does not imply any direct endorsement, partnership, or approval by The United States of America. Any resemblance or association between $USD and the US dollar is purely coincidental and intended for humorous purposes.
+        Please be advised that $USD is a cryptocurrency created for
+        entertainment purposes and is not affiliated with or endorsed by The
+        United States of America. $USD may reference or incorporate elements
+        related to the $USD's, image, or likeness, it does not imply any direct
+        endorsement, partnership, or approval by The United States of America.
+        Any resemblance or association between $USD and the US dollar is purely
+        coincidental and intended for humorous purposes.
       </p>
 
       <div className={styles.footer}>
-        <img src="/images/sproto.webp" alt="sproto" id={styles.sproto}/>
+        <img src="/images/sproto.webp" alt="sproto" id={styles.sproto} />
         <Link href="/terms">Terms of Service</Link>
         <Link href="/privacy">Privacy Policy</Link>
       </div>
