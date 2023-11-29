@@ -4,19 +4,13 @@ export default function Privacy() {
       <div style={{textAlign:"center"}}>
         <h1>Declaration</h1>
         <p>
-          At $USD, we take the protection of your Personal Data very seriously.
-        </p>
-
-        {/* <h2>What is Personal Data?</h2>
-                <p>Personal Data is information.</p> */}
-        <p>
           There comes a time in every degen's life when you have to make a
-          choice.{" "}
+          choice.
         </p>
         <p>Forget the blue pill. Forget the red pill. You're taking both. </p>
         <p>Placebo is for the weak minded and you're a warrior. </p>
         <p>
-          Ready to burn the boats and start something that can only be finished.{" "}
+          Ready to burn the boats and start something that can only be finished.
         </p>
 
         <p>They've printed, imported, outsourced and taxed. </p>
@@ -29,7 +23,7 @@ export default function Privacy() {
         <p>The bringers of a new dawn. </p>
         <p>
           People should not be afraid of their governments. Governments should
-          be afraid of their people.{" "}
+          be afraid of their people.
         </p>
 
         <p>So let them fear you. </p>
